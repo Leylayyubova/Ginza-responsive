@@ -1,0 +1,155 @@
+.ginza {
+    background-color:#eff1f5;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 35px 0 25px 0;
+
+        .icon {
+            i {
+                font-size: 13px;
+                line-height: 28px;
+                color: #929292;
+                margin-right: 12px;
+                cursor: pointer;
+
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+
+        .logo {
+            width: 107px;
+            height: 30px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .shop {
+            .glass {
+                position: relative;
+                display: flex;
+                
+                i {
+                    font-size: 18px;
+                    width: 40px;
+                    cursor: pointer;
+                }
+    
+                span {
+                    position: absolute;
+                    color: red;
+                    bottom: 66%;
+                    right: 25%;
+                    font-size: 12px;
+                }
+            }
+
+            .fa-bars {
+                display: none;
+            }
+        }
+    }
+
+    .text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .menu {
+            display: flex;
+            padding: 40px 0;
+
+            li {
+                position: relative;
+
+                a {
+                    margin-right: 37px;
+                    font-size: 13px;
+                    line-height: 23px;
+                    font-family: "Poppins", sans-serif;
+                    color: #000;
+                    font-weight: 700;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        color: red;
+                    }
+                }
+
+                .sub-menu,
+                .mega-menu {
+                    background-color: #fff;
+                    z-index: 5;
+                    position: absolute;
+                    top: 12%;
+                    display: none;
+                    margin-top: 30px;
+                    padding: 20px 0;
+                    box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.6);
+
+                    li {
+                        a {
+                            color: #292929;
+                            display: block;
+                            font-size: 13px;
+                            line-height: 35px;
+                            font-weight: 400;
+                            padding: 0 20px;
+                            text-transform: none;
+                            transition: 0.3s;
+
+                            &:hover {
+                                color: red;
+                                margin-left: 6px;
+                            }
+                        }
+                    }
+                }
+
+                .sub-menu {
+                    width: 210px;
+                }
+
+                .mega-menu {
+                    // display: flex;
+                    // display: none;
+                    width: 770px;
+                    border-bottom: 2px solid #ee3333;
+                    left: -40px;
+                    justify-content: space-between;
+                    transition: all 0.5s ease 0s;
+
+                    li {
+                        // display: flex;
+                        .item {
+                            font-size: 13px;
+                            text-transform: uppercase;
+                            font-weight: 600;
+                            line-height: 20px;
+                            color: #292929;
+                        }
+                        ul {
+                            border-right:1px solid #eeeeee;
+                        }
+
+                    }
+                }
+
+                &:hover .sub-menu {
+                    display: block;
+                }
+
+                &:hover .mega-menu {
+                    display: block;
+                }
+            }
+
+        }
+    }
+}
