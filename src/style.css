@@ -251,8 +251,7 @@ li {
   z-index: 0;
 }
 .arriwals .mySwiper .swiper-wrapper .swiper-slide img {
-  width: 1423px;
-  height: 500px;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -322,10 +321,8 @@ li {
 .decor .container .cards .card {
   cursor: pointer;
   position: relative;
-}
-.decor .container .cards .card .img {
-  width: 445px;
-  height: 259px;
+  width: 49%;
+  padding: 0 14px;
 }
 .decor .container .cards .card .img img {
   width: 100%;
@@ -372,6 +369,7 @@ li {
 }
 .bestproducts .container {
   display: flex;
+  justify-content: space-between;
   border-top: 1px solid #ebebeb;
   border-left: 3px solid #ebebeb;
   padding: 25px 0 0;
@@ -379,7 +377,6 @@ li {
 }
 .bestproducts .container .decorative {
   text-align: center;
-  width: 266px;
 }
 .bestproducts .container .decorative h3 {
   font-size: 21px;
@@ -427,10 +424,10 @@ li {
 .bestproducts .container .cards .card {
   width: 266px;
   position: relative;
-  padding: 0 15px;
+  z-index: 0;
+  transition: 1s;
 }
 .bestproducts .container .cards .card .product-label .new {
-  z-index: 2;
   background-color: #ee3333;
   position: absolute;
   font-size: 13px;
@@ -441,13 +438,15 @@ li {
   height: 50px;
   border-radius: 100%;
   top: 20px;
-  left: 34px;
+  left: 20px;
+  z-index: 1;
 }
 .bestproducts .container .cards .card .product-label .sale {
-  z-index: 2;
+  z-index: 1;
   position: absolute;
   background-color: #292929;
-  right: 2px;
+  left: auto;
+  right: 20px;
   color: #fff;
   text-align: center;
   line-height: 50px;
@@ -467,6 +466,7 @@ li {
   width: 100%;
   height: 100%;
   position: absolute;
+  transition: 0.3s;
 }
 .bestproducts .container .cards .card .img .secondimg {
   display: none;
@@ -481,9 +481,11 @@ li {
   box-shadow: -1px 0px 1px 0px rgba(0, 0, 0, 0.1);
   position: absolute;
   bottom: 32%;
-  left: 11%;
-  display: none;
+  left: 6%;
   transition: 0.3s;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 .bestproducts .container .cards .card .addtocart a {
   font-size: 14px;
@@ -508,6 +510,8 @@ li {
 }
 .bestproducts .container .cards .card:hover .addtocart {
   display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
 .bestproducts .container .cards .card .product-content .product-category {
   display: flex;
@@ -585,12 +589,13 @@ li {
 }
 .featured .container .cards {
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
 }
 .featured .container .cards .card {
   width: 266px;
   position: relative;
   z-index: 0;
+  transition: 1s;
 }
 .featured .container .cards .card .product-label .new {
   background-color: #ee3333;
@@ -645,10 +650,12 @@ li {
   padding: 5px 15px;
   box-shadow: -1px 0px 1px 0px rgba(0, 0, 0, 0.1);
   position: absolute;
-  bottom: 32%;
-  left: 11%;
-  display: none;
+  bottom: 28%;
+  left: 6%;
   transition: 0.3s;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 .featured .container .cards .card .addtocart a {
   font-size: 14px;
@@ -673,6 +680,8 @@ li {
 }
 .featured .container .cards .card:hover .addtocart {
   display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
 .featured .container .cards .card .product-content .product-category {
   display: flex;
@@ -724,10 +733,7 @@ li {
   padding: 0 14px;
   position: relative;
   cursor: pointer;
-}
-.blackfriday .container .cards .card .img {
-  width: 682px;
-  height: 321px;
+  width: 50%;
 }
 .blackfriday .container .cards .card .img img {
   width: 100%;
@@ -818,6 +824,7 @@ li {
   width: 266px;
   position: relative;
   z-index: 0;
+  transition: 1s;
 }
 .arrivals .container .cards .card .product-label .new {
   background-color: #ee3333;
@@ -872,10 +879,12 @@ li {
   padding: 5px 15px;
   box-shadow: -1px 0px 1px 0px rgba(0, 0, 0, 0.1);
   position: absolute;
-  bottom: 32%;
-  left: 11%;
-  display: none;
+  bottom: 28%;
+  left: 6%;
   transition: 0.3s;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 .arrivals .container .cards .card .addtocart a {
   font-size: 14px;
@@ -900,6 +909,8 @@ li {
 }
 .arrivals .container .cards .card:hover .addtocart {
   display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
 .arrivals .container .cards .card .product-content .product-category {
   display: flex;
@@ -1037,10 +1048,9 @@ li {
 .blogs .container .cards .card {
   overflow: hidden;
   cursor: pointer;
+  width: 32%;
 }
 .blogs .container .cards .card .img {
-  width: 364px;
-  height: 217px;
   padding-bottom: 20px;
   transition: 1s;
 }
@@ -1152,7 +1162,7 @@ li {
   align-items: center;
   text-align: center;
   max-width: 1423px;
-  height: 287px;
+  padding: 80px 0 90px;
   background-image: url(https://htmldemo.net/ginza/ginza/assets/images/bg/breadcrumb.jpg);
 }
 .home .container h2 {
@@ -1183,10 +1193,6 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.experiences .container .img {
-  width: 1152px;
-  height: 531px;
 }
 .experiences .container .img img {
   width: 100%;
@@ -1230,7 +1236,7 @@ li {
   justify-content: space-between;
 }
 .creative .container .boxes .box {
-  width: 364px;
+  width: 33%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1238,8 +1244,6 @@ li {
 }
 .creative .container .boxes .box img {
   margin-bottom: 30px;
-  width: 48px;
-  height: 48px;
 }
 .creative .container .boxes .box h4 {
   font-size: 16px;
@@ -1264,6 +1268,9 @@ li {
   display: flex;
   justify-content: space-between;
 }
+.mission .container .cards .card {
+  width: 33%;
+}
 .mission .container .cards .card img {
   width: 364px;
   height: 236px;
@@ -1283,7 +1290,7 @@ li {
 
 .choose {
   display: flex;
-  max-width: 1117px;
+  max-width: 1180px;
   margin: 0 auto;
   padding-bottom: 80px;
   justify-content: space-between;
@@ -1701,10 +1708,12 @@ li {
   padding: 5px 15px;
   box-shadow: -1px 0px 1px 0px rgba(0, 0, 0, 0.1);
   position: absolute;
-  bottom: 32%;
-  left: 11%;
-  display: none;
+  bottom: 12%;
+  left: 9%;
   transition: 0.3s;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 .showing .products .cards .card .all .addtocart a {
   font-size: 14px;
@@ -1729,6 +1738,8 @@ li {
 }
 .showing .products .cards .card .all:hover .addtocart {
   display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
 .showing .products .cards .card .product-content {
   padding: 0 14px;
@@ -1836,11 +1847,11 @@ li {
   .ginza .text {
     display: none;
   }
-  .arriwals {
-    width: 974px;
+  .arriwals .mySwiper .swiper-wrapper {
+    max-width: 662px;
   }
   .arriwals .mySwiper .swiper-wrapper .swiper-slide img {
-    width: 974px;
+    width: 100%;
   }
   .arriwals .mySwiper .swiper-wrapper .swiper-slide .text {
     top: 27%;
@@ -1855,15 +1866,13 @@ li {
     flex-wrap: wrap;
   }
   .decor .container .cards .card {
-    height: 296px;
-  }
-  .decor .container .cards .card .img {
-    width: 409px;
+    width: 50%;
   }
   .bestproducts .container {
     display: flex;
     flex-direction: column;
     border: none;
+    width: 662px;
   }
   .bestproducts .container .decorative {
     display: flex;
@@ -1896,7 +1905,6 @@ li {
   .bestproducts .container .cards {
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
   }
   .bestproducts .container .cards .card {
     padding: 0;
@@ -1941,10 +1949,6 @@ li {
   }
   .featured .container .cards .card:nth-child(4) {
     display: none;
-  }
-  .blackfriday .container .cards .card .img {
-    width: 457px;
-    height: 215px;
   }
   .blackfriday .container .cards .card .banner-content {
     width: 160px;
@@ -2006,7 +2010,7 @@ li {
     width: 662px;
   }
   .blogs .container .cards .card {
-    width: 321px;
+    width: 48%;
   }
   .blogs .container .cards .card:nth-child(3) {
     display: none;
@@ -2030,10 +2034,13 @@ li {
   .support .copyright .container {
     width: 672px;
   }
-  .experiences .container {
-    width: 672px;
+  .home {
+    height: 244px;
   }
-  .experiences .container .img {
+  .home .container h2 {
+    font-size: 36px;
+  }
+  .experiences .container {
     width: 672px;
   }
   .creative .container {
@@ -2057,14 +2064,15 @@ li {
     flex-wrap: wrap;
   }
   .mission .container .cards .card {
-    width: 321px;
-    height: 410px;
+    margin-bottom: 12px;
+    width: 45%;
   }
   .mission .container .cards .card img {
     width: 321px;
+    height: auto;
   }
   .choose {
-    width: 672px;
+    max-width: 672px;
     display: flex;
     flex-direction: column;
   }
@@ -2074,19 +2082,50 @@ li {
   .choose .container .faq-accordion {
     width: 672px;
   }
+  .choose .mySwiper {
+    margin-top: 30px;
+  }
   .choose .mySwiper .swiper-wrapper {
     width: 672px;
   }
+  .showing .container {
+    width: 700px;
+  }
+  .showing .products {
+    display: flex;
+    flex-direction: column;
+    width: 670px;
+  }
+  .showing .products .sidebar {
+    padding: 30px 30px 0 30px;
+    order: 1;
+  }
+  .showing .products .sidebar .common-sidebar {
+    width: 100%;
+  }
+  .showing .products .sidebar .common-sidebar .sidebar-tag {
+    width: 100%;
+  }
+  .showing .products .cards {
+    order: 0;
+  }
+  .showing .products .cards .card {
+    width: 100%;
+  }
+  .showing .products .cards .card .all .img {
+    width: 194px;
+    height: 259px;
+  }
+  .showing .products .cards .card .product-content {
+    width: 418px;
+  }
 }
 @media screen and (max-width: 759px) {
-  main {
-    width: 742px;
-  }
   .arriwals {
-    width: 742px;
+    max-width: 742px;
   }
   .arriwals .mySwiper {
-    width: 742px;
+    max-width: 742px;
   }
   .arriwals .mySwiper .swiper-wrapper .swiper-slide .text img {
     -o-object-fit: cover;
@@ -2099,7 +2138,6 @@ li {
     font-size: 30px;
   }
   .arriwals .mySwiper .swiper-wrapper .swiper-slide .text button {
-    width: 150px;
     height: 45px;
     line-height: 0;
     font-size: 14px;
@@ -2109,10 +2147,15 @@ li {
   }
   .decor .container .cards .card {
     margin-bottom: 30px;
+    padding: 0 14px;
+    width: 100%;
   }
-  .decor .container .cards .card .img {
-    width: 712px;
-    height: 415px;
+  .decor .container .cards .card .img img {
+    width: 100%;
+    height: 100%;
+  }
+  .decor .container .cards .card .content {
+    bottom: 66%;
   }
   .decor .container .cards .card .content h3 {
     font-size: 20px;
@@ -2159,14 +2202,16 @@ li {
   }
   .blackfriday .container .cards .card {
     margin-bottom: 30px;
-  }
-  .blackfriday .container .cards .card .img {
-    width: 712px;
-    height: 334px;
+    width: 100%;
   }
   .blackfriday .container .cards .card .banner-content {
     top: 39%;
     left: 8%;
+  }
+  .blackfriday .container .cards .card .banner-content h3 {
+    margin-top: 8px;
+    line-height: 1.3;
+    font-weight: 500;
   }
   .arrivals .container {
     width: 492px;
@@ -2179,17 +2224,13 @@ li {
     height: 308px;
   }
   .customer .mySwiper {
-    width: 492px;
+    max-width: 520px;
   }
   .customer .mySwiper .swiper-wrapper .swiper-slide .txt {
     width: 442px;
   }
   .blogs .container {
     width: 492px;
-  }
-  .blogs .container .cards .card .img {
-    width: 231px;
-    height: 138px;
   }
   .blogs .container .cards .card a {
     font-weight: 550;
@@ -2222,5 +2263,278 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .home .container {
+    height: 217px;
+  }
+  .home .container h2 {
+    font-size: 30px;
+  }
+  .experiences .container {
+    width: 492px;
+  }
+  .experiences .container h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .creative .container {
+    width: 520px;
+  }
+  .creative .container .boxes .box {
+    width: 48%;
+  }
+  .creative .container .boxes .box p {
+    line-height: 23px;
+  }
+  .mission .container {
+    width: 520px;
+  }
+  .mission .container .cards .card {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  .mission .container .cards .card img {
+    width: 231px;
+    height: auto;
+  }
+  .choose .container {
+    width: 520px;
+    margin: 0 auto;
+  }
+  .choose .container .faq-accordion {
+    width: 520px;
+    margin-bottom: 20px;
+  }
+  .choose .mySwiper {
+    width: 520px;
+    margin: 0 auto;
+  }
+  .showing .container {
+    width: 520px;
+  }
+  .showing .container .topbar p {
+    margin-left: 8px;
+  }
+  .showing .products {
+    width: 520px;
+  }
+  .showing .products .cards .card .all .img {
+    width: 231px;
+    height: 308px;
+  }
+  .showing .products .cards .card .product-content {
+    width: 231px;
+  }
+  .showing .products .cards .card .product-content .product-desc {
+    padding-top: 15px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .ginza {
+    width: 558px;
+  }
+  .ginza .container {
+    max-width: 558px;
+    display: flex;
+    justify-content: space-between;
+  }
+  main {
+    width: 558px;
+  }
+  main section {
+    width: 558px;
+  }
+  main section .container {
+    width: 402px;
+  }
+  .arriwals {
+    width: 558px;
+  }
+  .arriwals .mySwiper .swiper-wrapper {
+    max-width: 558px;
+  }
+  .arriwals .mySwiper .swiper-wrapper .swiper-slide img {
+    height: 350px;
+  }
+  .decor .container {
+    width: 558px;
+  }
+  .decor .container .cards {
+    height: 1000px;
+  }
+  .decor .container .cards .card {
+    width: 100%;
+    height: 308px;
+    margin: 0;
+  }
+  .decor .container .cards .card .img {
+    width: 100%;
+  }
+  .decor .container .cards .card .content {
+    bottom: 59%;
+  }
+  .bestproducts .container {
+    width: 430px;
+  }
+  .bestproducts .container .decorative {
+    width: 430px;
+  }
+  .bestproducts .container .decorative .tablist {
+    width: 430px;
+  }
+  .bestproducts .container .decorative .tablist li {
+    width: 201px;
+  }
+  .bestproducts .container .cards {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 402px;
+  }
+  .bestproducts .container .cards .card {
+    width: 100%;
+  }
+  .bestproducts .container .cards .card .img {
+    width: 100%;
+    height: 536px;
+  }
+  .bestproducts .container .cards .card:nth-child(2) {
+    display: none;
+  }
+  .featured .container {
+    width: 430px;
+  }
+  .featured .container .cards {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 402px;
+  }
+  .featured .container .cards .card {
+    width: 100%;
+  }
+  .featured .container .cards .card .img {
+    width: 100%;
+    height: 536px;
+  }
+  .featured .container .cards .card:nth-child(2) {
+    display: none;
+  }
+  .blackfriday .container {
+    width: 556px;
+  }
+  .arrivals .container {
+    width: 430px;
+  }
+  .arrivals .container .cards {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 402px;
+  }
+  .arrivals .container .cards .card {
+    width: 100%;
+  }
+  .arrivals .container .cards .card .img {
+    width: 100%;
+    height: 536px;
+  }
+  .arrivals .container .cards .card:nth-child(2) {
+    display: none;
+  }
+  .customer .mySwiper {
+    width: 402px;
+  }
+  .customer .mySwiper .swiper-wrapper .swiper-slide {
+    width: 352px;
+  }
+  .customer .mySwiper .swiper-wrapper .swiper-slide .txt {
+    width: 352px;
+  }
+  .blogs .container {
+    width: 402px;
+  }
+  .home .container {
+    width: 558px;
+  }
+  .experiences .container {
+    width: 402px;
+  }
+  .creative .container {
+    width: 402px;
+  }
+  .creative .container .boxes .box {
+    width: 100%;
+  }
+  .creative .container .boxes .box p {
+    width: 250px;
+  }
+  .mission .container {
+    width: 402px;
+  }
+  .mission .container .cards .card {
+    width: 100%;
+  }
+  .mission .container .cards .card img {
+    width: 100%;
+  }
+  .choose {
+    width: 558px;
+  }
+  .choose .container {
+    width: 402px;
+  }
+  .choose .container .faq-accordion {
+    width: 402px;
+  }
+  .choose .mySwiper {
+    width: 402px;
+  }
+  .choose .mySwiper .swiper-wrapper {
+    width: 402px;
+  }
+  .showing .products {
+    max-width: 402px;
+  }
+  .showing .products .cards .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  .showing .products .cards .card .all .img {
+    width: 100%;
+    height: 536px;
+  }
+  .showing .products .cards .card .product-content {
+    width: 402px;
+  }
+  .discount .container {
+    width: 402px;
+  }
+  .discount .container form {
+    width: 398px;
+    height: 45px;
+  }
+  .discount .container form input {
+    width: 308px;
+    padding-right: 0;
+    height: 40px;
+  }
+  .discount .container form button {
+    width: 136px;
+    height: 40px;
+  }
+  .discount .container form button .submit {
+    width: 100%;
+  }
+  .support {
+    width: 558px;
+  }
+  .support .openingtime .container {
+    width: 402px;
+  }
+  .support .copyright .container {
+    width: 402px;
   }
 }/*# sourceMappingURL=style.css.map */

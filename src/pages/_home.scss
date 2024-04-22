@@ -6,8 +6,7 @@
                 z-index: 0;
 
                 img {
-                    width: 1423px;
-                    height: 500px;
+                    width: 100%;
                     object-fit: cover;
                 }
 
@@ -88,10 +87,12 @@
             .card {
                 cursor: pointer;
                 position: relative;
+                width: 49%;
+                padding: 0 14px;
 
                 .img {
-                    width: 445px;
-                    height: 259px;
+                    // width: 445px;
+                    // height: 259px;
 
                     img {
                         width: 100%;
@@ -150,6 +151,7 @@
 
     .container {
         display: flex;
+        justify-content: space-between;
         border-top: 1px solid #ebebeb;
         border-left: 3px solid #ebebeb;
         padding: 25px 0 0;
@@ -157,7 +159,6 @@
 
         .decorative {
             text-align: center;
-            width: 266px;
 
             h3 {
                 font-size: 21px;
@@ -178,7 +179,6 @@
 
             .tablist {
 
-                // margin-right: 15px;
                 li {
                     padding: 23px 25px;
                     background-color: #f0f0f0;
@@ -213,17 +213,16 @@
 
         .cards {
             display: flex;
-            // justify-content: space-between;
             gap: 30px;
 
             .card {
                 width: 266px;
                 position: relative;
-                padding: 0 15px;
+                z-index: 0;
+                transition: 1s;
 
                 .product-label {
                     .new {
-                        z-index: 2;
                         background-color: #ee3333;
                         position: absolute;
                         font-size: 13px;
@@ -234,14 +233,16 @@
                         height: 50px;
                         border-radius: 100%;
                         top: 20px;
-                        left: 34px;
+                        left: 20px;
+                        z-index: 1;
                     }
 
                     .sale {
-                        z-index: 2;
+                        z-index: 1;
                         position: absolute;
                         background-color: #292929;
-                        right: 2px;
+                        left: auto;
+                        right: 20px;
                         color: #fff;
                         text-align: center;
                         line-height: 50px;
@@ -263,6 +264,7 @@
                         width: 100%;
                         height: 100%;
                         position: absolute;
+                        transition: 0.3s;
                     }
 
                     .secondimg {
@@ -281,9 +283,11 @@
                     box-shadow: -1px 0px 1px 0px rgba(0, 0, 0, 0.1);
                     position: absolute;
                     bottom: 32%;
-                    left: 11%;
-                    display: none;
+                    left: 6%;
                     transition: 0.3s;
+                    opacity: 0;
+                    transform: translateY(100%);
+                    transition: opacity 0.5s ease, transform 0.5s ease;
 
                     a {
                         font-size: 14px;
@@ -315,6 +319,8 @@
 
                 &:hover .addtocart {
                     display: block;
+                    opacity: 1;
+                    transform: translateY(0);
                 }
 
                 .product-content {
@@ -414,14 +420,13 @@
 
         .cards {
             display: flex;
-            // justify-content: space-between;
-            gap: 30px;
+            justify-content: space-between;
 
             .card {
                 width: 266px;
                 position: relative;
-                // padding: 0 15px;
                 z-index: 0;
+                transition: 1s;
 
                 .product-label {
                     .new {
@@ -484,10 +489,12 @@
                     padding: 5px 15px;
                     box-shadow: -1px 0px 1px 0px rgba(0, 0, 0, 0.1);
                     position: absolute;
-                    bottom: 32%;
-                    left: 11%;
-                    display: none;
+                    bottom: 28%;
+                    left: 6%;
                     transition: 0.3s;
+                    opacity: 0;
+                    transform: translateY(100%);
+                    transition: opacity 0.5s ease, transform 0.5s ease;
 
                     a {
                         font-size: 14px;
@@ -519,6 +526,8 @@
 
                 &:hover .addtocart {
                     display: block;
+                    opacity: 1;
+                    transform: translateY(0);
                 }
 
                 .product-content {
@@ -586,10 +595,11 @@
                 padding: 0 14px;
                 position: relative;
                 cursor: pointer;
+                width: 50%;
 
                 .img {
-                    width: 682px;
-                    height: 321px;
+                    // width: 682px;
+                    // height: 321px;
 
                     img {
                         width: 100%;
@@ -694,14 +704,13 @@
 
         .cards {
             display: flex;
-            // justify-content: space-between;
             gap: 30px;
 
             .card {
                 width: 266px;
                 position: relative;
-                // padding: 0 15px;
                 z-index: 0;
+                transition: 1s;
 
                 .product-label {
                     .new {
@@ -764,10 +773,12 @@
                     padding: 5px 15px;
                     box-shadow: -1px 0px 1px 0px rgba(0, 0, 0, 0.1);
                     position: absolute;
-                    bottom: 32%;
-                    left: 11%;
-                    display: none;
+                    bottom: 28%;
+                    left: 6%;
                     transition: 0.3s;
+                    opacity: 0;
+                    transform: translateY(100%);
+                    transition: opacity 0.5s ease, transform 0.5s ease;
 
                     a {
                         font-size: 14px;
@@ -799,6 +810,8 @@
 
                 &:hover .addtocart {
                     display: block;
+                    opacity: 1;
+                    transform: translateY(0);
                 }
 
                 .product-content {
@@ -878,7 +891,6 @@
                     p {
                         color: #707070;
                         font-size: 13px;
-
                         line-height: 2;
                     }
 
@@ -973,10 +985,9 @@
             .card {
                 overflow: hidden;
                 cursor: pointer;
+                width: 32%;
 
                 .img {
-                    width: 364px;
-                    height: 217px;
                     padding-bottom: 20px;
                     transition: 1s;
 
@@ -1114,7 +1125,7 @@
         align-items: center;
         text-align: center;
         max-width: 1423px;
-        height: 287px;
+        padding: 80px 0 90px;
         background-image: url(https://htmldemo.net/ginza/ginza/assets/images/bg/breadcrumb.jpg);
 
         h2 {
@@ -1152,9 +1163,6 @@
         justify-content: center;
 
         .img {
-            width: 1152px;
-            height: 531px;
-
             img {
                 width: 100%;
                 height: 100%;
@@ -1194,8 +1202,6 @@
 
 .creative {
     background-color: #f6f6f6 !important;
-
-    // height: 196px;
     .container {
         padding: 80px 0 50px;
 
@@ -1205,7 +1211,7 @@
             justify-content: space-between;
 
             .box {
-                width: 364px;
+                width: 33%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -1213,8 +1219,8 @@
 
                 img {
                     margin-bottom: 30px;
-                    width: 48px;
-                    height: 48px;
+                    // width: 48px;
+                    // height: 48px;
                 }
 
                 h4 {
@@ -1246,6 +1252,7 @@
             justify-content: space-between;
 
             .card {
+                width: 33%;
                 img {
                     width: 364px;
                     height: 236px;
@@ -1271,7 +1278,7 @@
 
 .choose {
     display: flex;
-    max-width: 1117px;
+    max-width: 1180px;
     margin: 0 auto;
     padding-bottom: 80px;
     justify-content: space-between;
@@ -1775,10 +1782,12 @@
                         padding: 5px 15px;
                         box-shadow: -1px 0px 1px 0px rgba(0, 0, 0, 0.1);
                         position: absolute;
-                        bottom: 32%;
-                        left: 11%;
-                        display: none;
+                        bottom: 12%;
+                        left: 9%;
                         transition: 0.3s;
+                        opacity: 0;
+                        transform: translateY(100%);
+                        transition: opacity 0.5s ease, transform 0.5s ease;
 
                         a {
                             font-size: 14px;
@@ -1810,8 +1819,9 @@
 
                     &:hover .addtocart {
                         display: block;
+                        opacity: 1;
+                        transform: translateY(0);
                     }
-
                 }
 
                 .product-content {
@@ -1890,11 +1900,13 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
                 .active {
                     a {
                         color: #ee3333;
                     }
                 }
+
                 li {
                     margin: 0 15px 0 0;
 
@@ -1908,7 +1920,7 @@
                     }
                 }
 
-                
+
             }
         }
 

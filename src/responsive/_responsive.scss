@@ -1,9 +1,9 @@
-@media screen and (max-width:991px ) {
+@media screen and (max-width:991px) {
     .ginza {
         background-color: #fff;
+
         .container {
             margin: 0 112px;
-            // width: 520px;
 
             .icon {
                 display: none;
@@ -35,17 +35,13 @@
     }
 
     .arriwals {
-        width: 974px;
         .mySwiper {
-            // width: 974px;
             .swiper-wrapper {
-                // width: 974px;
+                max-width: 662px;
+
                 .swiper-slide {
-                    // width: 974px;
                     img {
-                        // height: 500px;
-                        width: 974px;
-                        // object-fit: cover;
+                        width: 100%;
                     }
 
                     .text {
@@ -67,12 +63,7 @@
                 flex-wrap: wrap;
 
                 .card {
-                    height: 296px;
-
-                    .img {
-                        width: 409px;
-                    }
-
+                    width: 50%;
                 }
             }
 
@@ -84,6 +75,7 @@
             display: flex;
             flex-direction: column;
             border: none;
+            width: 662px;
 
             .decorative {
                 display: flex;
@@ -122,7 +114,6 @@
             .cards {
                 margin: 0 auto;
                 display: flex;
-                flex-wrap: wrap;
 
                 .card {
                     padding: 0;
@@ -194,11 +185,6 @@
         .container {
             .cards {
                 .card {
-                    .img {
-                        width: 457px;
-                        height: 215px;
-                    }
-
                     .banner-content {
                         width: 160px;
                         top: 24%;
@@ -288,9 +274,8 @@
             width: 662px;
 
             .cards {
-
                 .card {
-                    width: 321px;
+                    width: 48%;
                 }
 
                 .card:nth-child(3) {
@@ -332,14 +317,20 @@
         }
     }
 
+    .home {
+        height: 244px;
+
+        .container {
+            h2 {
+                font-size: 36px;
+            }
+
+        }
+    }
+
     .experiences {
         .container {
             width: 672px;
-
-            .img {
-                width: 672px;
-
-            }
         }
     }
 
@@ -371,11 +362,12 @@
                 flex-wrap: wrap;
 
                 .card {
-                    width: 321px;
-                    height: 410px;
+                    margin-bottom: 12px;
+                    width: 45%;
 
                     img {
                         width: 321px;
+                        height: auto;
                     }
                 }
             }
@@ -383,7 +375,7 @@
     }
 
     .choose {
-        width: 672px;
+        max-width: 672px;
         display: flex;
         flex-direction: column;
 
@@ -397,24 +389,65 @@
         }
 
         .mySwiper {
+            margin-top: 30px;
+
             .swiper-wrapper {
                 width: 672px;
+            }
+        }
+    }
+
+    .showing {
+        .container {
+            width: 700px;
+        }
+
+        .products {
+            display: flex;
+            flex-direction: column;
+            width: 670px;
+
+            .sidebar {
+                padding: 30px 30px 0 30px;
+                order: 1;
+
+                .common-sidebar {
+                    width: 100%;
+
+                    .sidebar-tag {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .cards {
+                order: 0;
+
+                .card {
+                    width: 100%;
+
+                    .all {
+                        .img {
+                            width: 194px;
+                            height: 259px;
+                        }
+                    }
+
+                    .product-content {
+                        width: 418px;
+                    }
+                }
             }
         }
     }
 }
 
 @media screen and (max-width:759px) {
-    main {
-        width: 742px;
-    }
-
     .arriwals {
-        width: 742px;
+        max-width: 742px;
 
         .mySwiper {
-            width: 742px;
-
+            max-width: 742px;
             .swiper-wrapper {
                 .swiper-slide {
                     .text {
@@ -431,7 +464,7 @@
                         }
 
                         button {
-                            width: 150px;
+                            // width: 150px;
                             height: 45px;
                             line-height: 0;
                             font-size: 14px;
@@ -449,13 +482,19 @@
 
                 .card {
                     margin-bottom: 30px;
+                    padding: 0 14px;
+                    width: 100%;
 
                     .img {
-                        width: 712px;
-                        height: 415px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
                     }
 
                     .content {
+                        bottom: 66%;
+
                         h3 {
                             font-size: 20px;
                             font-weight: 550;
@@ -528,18 +567,19 @@
                 display: flex;
                 flex-wrap: wrap;
 
-                // height: 1335px;
                 .card {
                     margin-bottom: 30px;
-
-                    .img {
-                        width: 712px;
-                        height: 334px;
-                    }
+                    width: 100%;
 
                     .banner-content {
                         top: 39%;
                         left: 8%;
+
+                        h3 {
+                            margin-top: 8px;
+                            line-height: 1.3;
+                            font-weight: 500;
+                        }
                     }
                 }
             }
@@ -565,7 +605,7 @@
 
     .customer {
         .mySwiper {
-            width: 492px;
+            max-width: 520px;
 
             .swiper-wrapper {
                 .swiper-slide {
@@ -574,7 +614,6 @@
                     }
                 }
             }
-
         }
     }
 
@@ -584,10 +623,6 @@
 
             .cards {
                 .card {
-                    .img {
-                        width: 231px;
-                        height: 138px;
-                    }
 
                     a {
                         font-weight: 550;
@@ -636,6 +671,399 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+            }
+        }
+    }
+
+    .home {
+        .container {
+            height: 217px;
+
+            h2 {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .experiences {
+        .container {
+            width: 492px;
+
+            h4 {
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .creative {
+        .container {
+            width: 520px;
+
+            .boxes {
+                .box {
+                    width: 48%;
+
+                    p {
+                        line-height: 23px;
+                    }
+                }
+            }
+        }
+    }
+
+    .mission {
+        .container {
+            width: 520px;
+
+            .cards {
+                .card {
+                    width: 48%;
+                    margin-bottom: 20px;
+
+                    img {
+                        width: 231px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .choose {
+
+        .container {
+            width: 520px;
+            margin: 0 auto;
+
+            .faq-accordion {
+                width: 520px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .mySwiper {
+            width: 520px;
+            margin: 0 auto;
+        }
+    }
+
+    .showing {
+        .container {
+            width: 520px;
+
+            .topbar {
+                p {
+                    margin-left: 8px;
+                }
+            }
+        }
+
+        .products {
+            width: 520px;
+
+            .cards {
+                .card {
+                    .all {
+                        .img {
+                            width: 231px;
+                            height: 308px;
+                        }
+
+                    }
+
+                    .product-content {
+                        width: 231px;
+
+                        .product-desc {
+                            padding-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:575px) {
+    .ginza {
+        width: 558px;
+        .container {
+            max-width: 558px;
+            display: flex;
+            justify-content: space-between;
+        }
+       
+    }
+
+    main {
+       width: 558px;
+
+        section {
+            width: 558px;
+
+            .container {
+                width: 402px;
+            }
+        }
+
+    }
+
+    .arriwals {
+        width: 558px;
+        .mySwiper {
+            .swiper-wrapper {
+                max-width: 558px;
+                .swiper-slide {
+                    img {
+                        height: 350px;
+                    }
+                }
+            }
+        }
+    }
+
+    .decor {
+        .container {
+            width: 558px;
+            .cards {
+                height: 1000px;
+                .card {
+                    width: 100%;
+                    height: 308px;
+                    margin: 0;
+                    .img {
+                        width: 100%;
+                    }
+                    .content {
+                        bottom: 59%;
+                    }
+                }
+            }
+        }
+    }
+
+    .bestproducts {
+        .container {
+            width: 430px;
+            .decorative {
+                width: 430px;
+                .tablist {
+                    width: 430px;
+                    li {
+                        width: 201px;
+                    }
+                }
+            }
+            .cards {
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+                width: 402px;
+                .card {
+                    width: 100%;
+                    .img {
+                        width: 100%;
+                        height: 536px;
+                    }
+                }
+                .card:nth-child(2) {
+                    display: none;
+                }
+            }
+
+        }
+    }
+
+    .featured {
+        .container {
+            width:430px;
+            .cards {
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+                width: 402px;
+                .card {
+                    width: 100%;
+                    .img {
+                        width: 100%;
+                        height: 536px;
+                    }
+                }
+                .card:nth-child(2) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .blackfriday {
+        .container {
+            width: 556px;
+        }
+    }
+
+    .arrivals {
+        .container {
+            width:430px;
+            .cards {
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+                width: 402px;
+                .card {
+                    width: 100%;
+                    .img {
+                        width: 100%;
+                        height: 536px;
+                    }
+                }
+                .card:nth-child(2) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .customer {
+        .mySwiper {
+            width: 402px;
+            .swiper-wrapper {
+                .swiper-slide {
+                    width: 352px;
+                    .txt {
+                        width: 352px;
+                    }
+                }
+            }
+        }
+    }
+
+    .blogs {
+        .container {
+            width: 402px;
+        }
+    }
+
+    .home {
+        .container {
+            width: 558px;
+        }
+    }
+
+    .experiences {
+        .container {
+            width: 402px;
+        }
+    }
+
+    .creative {
+        .container {
+            width: 402px;
+            .boxes {
+                .box {
+                    width: 100%;
+                    p {
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+
+    .mission {
+        .container {
+            width: 402px;
+            .cards {
+                .card {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .choose {
+        width: 558px;
+        .container {
+            width: 402px;
+            .faq-accordion {
+                width: 402px;
+            }
+        }
+        .mySwiper {
+            width: 402px;
+            .swiper-wrapper {
+                width: 402px;
+            }
+        }
+    }
+
+    .showing {
+        .products {
+            max-width: 402px;
+
+            .cards {
+                .card {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    padding: 0;
+
+                    .all {
+                        .img {
+                            width: 100%;
+                            height: 536px;
+                        }
+
+                    }
+
+                    .product-content {
+                        width: 402px;
+                    }
+                }
+            }
+        }
+    }
+
+    .discount {
+        .container {
+            width: 402px;
+            form {
+                width: 398px;
+                height: 45px;
+
+                input {
+                    width: 308px;
+                    padding-right: 0;
+                    height: 40px;
+                }
+
+                button {
+                    width: 136px;
+                    height: 40px;
+
+                    .submit {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .support {
+        width: 558px;
+        .openingtime {
+            .container {
+              width: 402px;
+            }
+        }
+
+        .copyright {
+            .container {
+                width: 402px;
             }
         }
     }
