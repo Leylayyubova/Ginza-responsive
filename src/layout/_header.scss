@@ -1,5 +1,6 @@
 .ginza {
-    background-color:#eff1f5;
+    background-color: #eff1f5;
+
     .container {
         display: flex;
         align-items: center;
@@ -23,6 +24,7 @@
         .logo {
             width: 107px;
             height: 30px;
+            cursor: pointer;
 
             img {
                 width: 100%;
@@ -34,13 +36,13 @@
             .glass {
                 position: relative;
                 display: flex;
-                
+
                 i {
                     font-size: 18px;
                     width: 40px;
                     cursor: pointer;
                 }
-    
+
                 span {
                     position: absolute;
                     color: red;
@@ -126,6 +128,7 @@
                     transition: all 0.5s ease 0s;
 
                     li {
+
                         // display: flex;
                         .item {
                             font-size: 13px;
@@ -134,8 +137,9 @@
                             line-height: 20px;
                             color: #292929;
                         }
+
                         ul {
-                            border-right:1px solid #eeeeee;
+                            border-right: 1px solid #eeeeee;
                         }
 
                     }

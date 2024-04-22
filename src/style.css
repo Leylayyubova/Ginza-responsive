@@ -43,6 +43,7 @@ li {
 .ginza .container .logo {
   width: 107px;
   height: 30px;
+  cursor: pointer;
 }
 .ginza .container .logo img {
   width: 100%;
