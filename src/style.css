@@ -160,6 +160,7 @@ li {
   margin-bottom: 30px;
   width: 107px;
   height: 30px;
+  cursor: pointer;
 }
 .support .openingtime .container .delivery .logo img {
   width: 100%;
@@ -377,6 +378,7 @@ li {
 }
 .bestproducts .container .decorative {
   text-align: center;
+  width: 23%;
 }
 .bestproducts .container .decorative h3 {
   font-size: 21px;
@@ -392,6 +394,9 @@ li {
   margin-bottom: 0;
   font-weight: 600;
   text-transform: uppercase;
+}
+.bestproducts .container .decorative .tablist {
+  cursor: pointer;
 }
 .bestproducts .container .decorative .tablist li {
   padding: 23px 25px;
@@ -426,6 +431,7 @@ li {
   position: relative;
   z-index: 0;
   transition: 1s;
+  cursor: pointer;
 }
 .bestproducts .container .cards .card .product-label .new {
   background-color: #ee3333;
@@ -569,6 +575,9 @@ li {
   font-size: 24px;
   text-transform: capitalize;
 }
+.featured .container .title .angle-arrow {
+  cursor: pointer;
+}
 .featured .container .title .angle-arrow i {
   font-size: 18px;
   line-height: 42px;
@@ -596,6 +605,7 @@ li {
   position: relative;
   z-index: 0;
   transition: 1s;
+  cursor: pointer;
 }
 .featured .container .cards .card .product-label .new {
   background-color: #ee3333;
@@ -798,6 +808,9 @@ li {
   font-size: 24px;
   text-transform: capitalize;
 }
+.arrivals .container .title .angle-arrow {
+  cursor: pointer;
+}
 .arrivals .container .title .angle-arrow i {
   font-size: 18px;
   line-height: 42px;
@@ -825,6 +838,7 @@ li {
   position: relative;
   z-index: 0;
   transition: 1s;
+  cursor: pointer;
 }
 .arrivals .container .cards .card .product-label .new {
   background-color: #ee3333;
@@ -1023,6 +1037,9 @@ li {
   font-size: 24px;
   text-transform: capitalize;
 }
+.blogs .container .title .angle-arrow {
+  cursor: pointer;
+}
 .blogs .container .title .angle-arrow i {
   font-size: 18px;
   line-height: 42px;
@@ -1095,6 +1112,7 @@ li {
   padding: 0 20px;
   background-color: #fff;
   transition: 0.3s;
+  cursor: pointer;
 }
 .blogs .container .cards .card button:hover {
   background-color: #e33;
@@ -1640,6 +1658,12 @@ li {
   background-color: #fff;
   color: #292929;
   border: 2px solid #ebebeb;
+  cursor: pointer;
+}
+.showing .products .sidebar .common-sidebar .price .btn:hover {
+  background-color: red;
+  color: #fff;
+  border: none;
 }
 .showing .products .sidebar .common-sidebar .price span {
   font-size: 14px;
@@ -1652,6 +1676,7 @@ li {
   display: flex;
   width: 863px;
   margin-bottom: 16px;
+  cursor: pointer;
 }
 .showing .products .cards .card .all {
   padding: 0 14px;
