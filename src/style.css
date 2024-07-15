@@ -8,6 +8,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+body.dark-mode {
+  background-color: #1a1a1a; /* koyu mod arka plan rengi */
+  color: #ffffff; /* koyu mod metin rengi */
+}
+
 .container {
   margin: 0 auto;
   max-width: 1152px;
@@ -49,6 +54,9 @@ li {
   width: 100%;
   height: 100%;
 }
+.ginza .container .shop {
+  display: flex;
+}
 .ginza .container .shop .glass {
   position: relative;
   display: flex;
@@ -67,6 +75,13 @@ li {
 }
 .ginza .container .shop .fa-bars {
   display: none;
+}
+.ginza .container .shop #dark-mode-toggle {
+  border: none;
+  margin-left: 12px;
+}
+.ginza .container .shop #language-toggle {
+  margin-left: 12px;
 }
 .ginza .text {
   display: flex;
@@ -147,7 +162,7 @@ li {
 }
 
 .support {
-  background-color: #f6f6f6 !important;
+  background-color: #f6f6f6;
 }
 .support .openingtime {
   padding-bottom: 40px !important;
@@ -2563,4 +2578,86 @@ li {
   .support .copyright .container {
     width: 402px;
   }
+}
+body.dark-mode .ginza {
+  background: #212020;
+}
+body.dark-mode .ginza .logo {
+  background-color: #fff;
+}
+body.dark-mode .ginza .text .menu li a {
+  color: #fff;
+}
+body.dark-mode .ginza .text .menu li .mega-menu li a {
+  color: #212020;
+}
+body.dark-mode .ginza .text .menu li .sub-menu li a {
+  color: #212020;
+}
+body.dark-mode .ginza .shop #dark-mode-toggle {
+  background-color: transparent;
+  color: #fff;
+}
+body.dark-mode .bestproducts .container .cards .card .product-content p {
+  color: #fff;
+}
+body.dark-mode .featured .container .cards .product-content p {
+  color: #fff;
+}
+body.dark-mode .arrivals .container .cards .card .product-category a {
+  color: #fff;
+}
+body.dark-mode .arrivals .container .cards .card p {
+  color: #fff;
+}
+body.dark-mode .blogs .container .cards .card a {
+  color: #fff;
+}
+body.dark-mode .support {
+  background-color: #212020;
+}
+body.dark-mode .support .openingtime {
+  background: #212020;
+}
+body.dark-mode .support .openingtime .container .delivery .logo img {
+  background: #fff;
+}
+body.dark-mode .support .openingtime .container .delivery li a {
+  color: #fff;
+}
+body.dark-mode .support .copyright {
+  background: #212020;
+}
+body.dark-mode .home .container h2,
+body.dark-mode .home .container p {
+  color: #000;
+}
+body.dark-mode .creative {
+  background: #000;
+}
+body.dark-mode .creative .container .boxes .box h4,
+body.dark-mode .creative .container .boxes .box p {
+  color: #000;
+}
+body.dark-mode .showing {
+  background: #212020;
+}
+body.dark-mode .showing .container {
+  background-color: #000;
+}
+body.dark-mode .showing .container .toolbar label {
+  color: #fff;
+}
+body.dark-mode .showing .products .sidebar .common-sidebar h3 {
+  color: #fff;
+}
+body.dark-mode .showing .products .sidebar .common-sidebar .sidebar-list li a {
+  color: #fff;
+}
+body.dark-mode .showing .products .sidebar .common-sidebar .sidebar-tag li a {
+  color: #fff;
+}
+body.dark-mode .showing .products .cards .card .product-content .product-category a,
+body.dark-mode .showing .products .cards .card .product-content .product-category p {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

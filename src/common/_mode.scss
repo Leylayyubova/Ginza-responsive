@@ -1,0 +1,207 @@
+body {
+    &.dark-mode {
+        .ginza {
+            background: #212020;
+
+            .logo {
+                background-color: #fff;
+            }
+            .text {
+                .menu {
+                    li {
+                        a {
+                            color: #fff;
+                        }
+
+                        .mega-menu {
+
+                            li {
+                                a {
+                                    color: #212020;
+
+                                }
+                            }
+                        }
+
+                        .sub-menu {
+                            li {
+                                a {
+                                    color: #212020;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .shop {
+                #dark-mode-toggle {
+                    background-color: transparent;
+                    color: #fff;
+                }
+            }
+        }
+
+        .bestproducts {
+            .container {
+                .cards {
+                    .card {
+                        .product-content {
+                            p {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .featured {
+            .container {
+                .cards {
+                    .product-content {
+                        p {
+                            color: #fff;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .arrivals {
+            .container {
+                .cards {
+                    .card {
+                        .product-category {
+                            a {
+                                color: #fff;
+                            }
+                        }
+
+                        p {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .blogs {
+            .container {
+                .cards {
+                    .card {
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .support {
+            background-color: #212020;
+
+            .openingtime {
+                background: #212020;
+
+                .container {
+                    .delivery {
+                        .logo {
+                            img {
+                                background: #fff;
+                            }
+                        }
+
+                        li {
+                            a {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .copyright {
+                background: #212020;
+            }
+        }
+
+        .home {
+            .container {
+
+                h2,
+                p {
+                    color: #000;
+                }
+            }
+        }
+
+        .creative {
+            background: #000;
+
+            .container {
+                .boxes {
+                    .box {
+
+                        h4,
+                        p {
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+
+        .showing {
+            background: #212020;
+            .container {
+                background-color: #000;
+                .toolbar {
+                    label {
+                        color: #fff;
+                    }
+                }
+            }
+            .products {
+                .sidebar {
+                    .common-sidebar {
+                        h3 {
+                            color: #fff;
+                        }
+
+                        .sidebar-list {
+                            li {
+                                a {
+                                    color: #fff;
+                                }
+                            }
+                        }
+
+                        .sidebar-tag {
+                            li {
+                                a {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                .cards {
+                    .card {
+                        .product-content {
+                            .product-category {
+
+                                a,
+                                p {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

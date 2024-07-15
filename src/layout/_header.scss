@@ -33,6 +33,8 @@
         }
 
         .shop {
+            display: flex;
+
             .glass {
                 position: relative;
                 display: flex;
@@ -55,7 +57,17 @@
             .fa-bars {
                 display: none;
             }
+
+            #dark-mode-toggle {
+                border: none;
+                margin-left: 12px;
+            }
+
+            #language-toggle {
+                margin-left: 12px;
+            }
         }
+
     }
 
     .text {
@@ -156,4 +168,5 @@
 
         }
     }
+
 }

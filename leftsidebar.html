@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header style="background-color: #fff;" class="ginza">
+    <header class="ginza">
         <div class="container">
             <div class="icon">
                 <i class="fa-brands fa-facebook-f"></i>
@@ -31,97 +31,114 @@
                     <span>2</span>
                 </div>
                 <i class="fa-solid fa-bars"></i>
+                <button id="dark-mode-toggle">
+                    <i id="icon-toggle" class="fas fa-sun"></i>
+                </button>
+                <button id="language-toggle">AZ</button>
             </div>
         </div>
         <div class="text">
             <ul class="menu">
-                <li><a href="./index.html">Home</a>
+                <li><a href="./index.html" data-az="Əsas" data-en="Home">Əsas</a>
                     <ul class="sub-menu">
-                        <li><a href="">Home One</a></li>
-                        <li><a href="">Home Two</a></li>
-                        <li><a href="">Home Three</a></li>
-                        <li><a href="">Home Four</a></li>
+                        <li><a href="" data-az="Əsas Bir" data-en="Home One">Əsas Bir</a></li>
+                        <li><a href="" data-az="Əsas İki" data-en="Home Two">Əsas İki</a></li>
+                        <li><a href="" data-az="Əsas Üç" data-en="Home Three">Əsas Üç</a></li>
+                        <li><a href="" data-az="Əsas Dörd" data-en="Home Four">Əsas Dörd</a></li>
                     </ul>
                 </li>
-                <li><a href="">Shop</a>
+                <li><a href="./leftsidebar.html" data-az="Mağaza" data-en="Shop">Mağaza</a>
                     <ul class="mega-menu">
-                        <li><a href="" class="item">Pages</a>
+                        <li><a href="" class="item" data-az="Səhifələr" data-en="Pages">Səhifələr</a>
                             <ul>
-                                <li><a href="">Compare</a></li>
-                                <li><a href="">Shopping Cart</a></li>
-                                <li><a href="">Checkout</a></li>
-                                <li><a href="">Wishlist</a></li>
-                                <li><a href="">My Account</a></li>
-                                <li><a href="">Login Register</a></li>
-                                <li><a href="">Frequently Questions</a></li>
-                                <li><a href="">Error 404</a></li>
+                                <li><a href="" data-az="Müqayisə" data-en="Compare">Müqayisə</a></li>
+                                <li><a href="" data-az="Alış-veriş Səbəti" data-en="Shopping Cart">Alış-veriş Səbəti</a>
+                                </li>
+                                <li><a href="" data-az="Ödəniş" data-en="Checkout">Ödəniş</a></li>
+                                <li><a href="" data-az="Arzu Sırası" data-en="Wishlist">Arzu Sırası</a></li>
+                                <li><a href="" data-az="Mənim Hesabım" data-en="My Account">Mənim Hesabım</a></li>
+                                <li><a href="" data-az="Giriş Qeydiyyat" data-en="Login Register">Giriş Qeydiyyat</a>
+                                </li>
+                                <li><a href="" data-az="Tez-tez Verilən Suallar" data-en="Frequently Questions">Tez-tez
+                                        Verilən Suallar</a></li>
+                                <li><a href="" data-az="Səhv 404" data-en="Error 404">Səhv 404</a></li>
                             </ul>
                         </li>
-                        <li><a href="" class="item">Shop Layout</a>
+                        <li><a href="" class="item" data-az="Mağaza Dizaynı" data-en="Shop Layout">Mağaza Dizaynı</a>
                             <ul>
-                                <li><a href="">Shop</a></li>
-                                <li><a href="">Shop Three Column</a></li>
-                                <li><a href="">Shop Four Column</a></li>
-                                <li><a href="">Shop Right Sidebar</a></li>
-                                <li><a href="">Shop List No Sidebar</a></li>
-                                <li><a href="./leftsidebar.html">Shop List Left Sidebar</a>
-                                </li>
-                                <li><a href="">Shop List Right
-                                        Sidebar</a></li>
+                                <li><a href="" data-az="Mağaza" data-en="Shop">Mağaza</a></li>
+                                <li><a href="" data-az="Üç Sütunlu Mağaza" data-en="Shop Three Column">Üç Sütunlu
+                                        Mağaza</a></li>
+                                <li><a href="" data-az="Dörd Sütunlu Mağaza" data-en="Shop Four Column">Dörd Sütunlu
+                                        Mağaza</a></li>
+                                <li><a href="" data-az="Sağ Barlı Mağaza" data-en="Shop Right Sidebar">Sağ Barlı
+                                        Mağaza</a></li>
+                                <li><a href="" data-az="Sütunsuz Mağaza Siyahısı"
+                                        data-en="Shop List No Sidebar">Sütunsuz Mağaza Siyahısı</a></li>
+                                <li><a href="./leftsidebar.html" data-az="Sola Sütunlu Mağaza Siyahısı"
+                                        data-en="Shop List Left Sidebar">Sola Sütunlu Mağaza Siyahısı</a></li>
+                                <li><a href="" data-az="Sağ Sütunlu Mağaza Siyahısı"
+                                        data-en="Shop List Right Sidebar">Sağ Sütunlu Mağaza Siyahısı</a></li>
                             </ul>
                         </li>
-                        <li><a href="#" class="item">Product Details</a>
+                        <li><a href="#" class="item" data-az="Məhsul Detalları" data-en="Product Details">Məhsul
+                                Detalları</a>
                             <ul>
-                                <li><a href="">Single Product</a></li>
-                                <li><a href="">Variable Product</a></li>
-                                <li><a href="">Affiliate Product</a>
+                                <li><a href="" data-az="Tək Məhsul" data-en="Single Product">Tək Məhsul</a></li>
+                                <li><a href="" data-az="Dəyişən Məhsul" data-en="Variable Product">Dəyişən Məhsul</a>
                                 </li>
-                                <li><a href="">Group Product</a></li>
-                                <li><a href="">Product Left Tab</a>
+                                <li><a href="" data-az="Əlil Məhsul" data-en="Affiliate Product">Əlil Məhsul</a></li>
+                                <li><a href="" data-az="Qrup Məhsulu" data-en="Group Product">Qrup Məhsulu</a></li>
+                                <li><a href="" data-az="Məhsul Sol Tab" data-en="Product Left Tab">Məhsul Sol Tab</a>
                                 </li>
-                                <li><a href="">Product Right Tab</a>
+                                <li><a href="" data-az="Məhsul Sağ Tab" data-en="Product Right Tab">Məhsul Sağ Tab</a>
                                 </li>
-                                <li><a href="">Product Gallery
-                                        Left</a></li>
-                                <li><a href="">Product Gallery
-                                        Right</a></li>
+                                <li><a href="" data-az="Məhsul Qalereya Sol" data-en="Product Gallery Left">Məhsul
+                                        Qalereya Sol</a></li>
+                                <li><a href="" data-az="Məhsul Qalereya Sağ" data-en="Product Gallery Right">Məhsul
+                                        Qalereya Sağ</a></li>
                             </ul>
                         </li>
-                        <li><a href="" class="item">Product Details</a>
+                        <li><a href="" class="item" data-az="Məhsul Detalları" data-en="Product Details">Məhsul
+                                Detalları</a>
                             <ul>
-                                <li><a href="">Product Sticky
-                                        Left</a></li>
-                                <li><a href="">Product Sticky
-                                        Right</a></li>
-                                <li><a href="">Product Box Slider</a>
-                                </li>
+                                <li><a href="" data-az="Məhsul Sticky Sol" data-en="Product Sticky Left">Məhsul Sticky
+                                        Sol</a></li>
+                                <li><a href="" data-az="Məhsul Sticky Sağ" data-en="Product Sticky Right">Məhsul Sticky
+                                        Sağ</a></li>
+                                <li><a href="" data-az="Məhsul Qutu Slayderi" data-en="Product Box Slider">Məhsul Qutu
+                                        Slayderi</a></li>
                             </ul>
                         </li>
                     </ul>
                 </li>
-                <li><a href="">Blog</a>
+                <li><a href="" data-az="Blog" data-en="Blog">Blog</a>
                     <ul class="sub-menu">
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Blog Right Sidebar</a></li>
-                        <li><a href="">Blog Grid</a></li>
-                        <li><a href="">Blog Large Image</a></li>
-                        <li><a href="">Blog No Sidebar</a></li>
-                        <li><a href="">Blog Details</a></li>
-                        <li><a href="">Blog Details Gallery</a></li>
-                        <li><a href="">Blog Details Audio</a></li>
-                        <li><a href="">Blog Details Video</a></li>
+                        <li><a href="" data-az="Blog" data-en="Blog">Blog</a></li>
+                        <li><a href="" data-az="Blog Sağ Barlı" data-en="Blog Right Sidebar">Blog Sağ Barlı</a></li>
+                        <li><a href="" data-az="Blog Qaralama" data-en="Blog Grid">Blog Qaralama</a></li>
+                        <li><a href="" data-az="Blog Böyük Şəkil" data-en="Blog Large Image">Blog Böyük Şəkil</a></li>
+                        <li><a href="" data-az="Blog Səhifəsiz" data-en="Blog No Sidebar">Blog Səhifəsiz</a></li>
+                        <li><a href="" data-az="Blog Detalları" data-en="Blog Details">Blog Detalları</a></li>
+                        <li><a href="" data-az="Blog Detalları Qalereya" data-en="Blog Details Gallery">Blog Detalları
+                                Qalereya</a></li>
+                        <li><a href="" data-az="Blog Detalları Audio" data-en="Blog Details Audio">Blog Detalları
+                                Audio</a></li>
+                        <li><a href="" data-az="Blog Detalları Video" data-en="Blog Details Video">Blog Detalları
+                                Video</a></li>
                     </ul>
                 </li>
-                <li><a href="./about.html">About us</a></li>
-                <li><a href="">Contact us</a></li>
+                <li><a href="./about.html" data-az="Haqqımızda" data-en="About us">Haqqımızda</a></li>
+                <li><a href="" data-az="Bizimlə əlaqə" data-en="Contact us">Bizimlə əlaqə</a></li>
             </ul>
         </div>
     </header>
     <main>
         <section class="home">
             <div class="container">
-                <h2>Shop</h2>
-                <p>Home <span>/ About Us</span></p>
+                <h2 data-en="Shop" data-az="Mağaza">Shop</h2>
+                <p data-en="Home" data-az="Ana Səhifə">Home <span data-en="/ About Us" data-az="/ Haqqımızda">/ About
+                        Us</span></p>
             </div>
         </section>
         <section class="showing">
@@ -129,61 +146,61 @@
                 <div class="topbar">
                     <i class="fa-solid fa-barcode"></i>
                     <i class="fa-solid fa-list"></i>
-                    <p>Showing 1–9 of 41 results</p>
+                    <p data-az="1–9 nəticə göstərilir, 41 nəticə" data-en="Showing 1–9 of 41 results">Showing 1–9 of 41 results</p>
                 </div>
                 <div class="toolbar">
-                    <label>Sort By:</label>
+                    <label data-az="Sırala:" data-en="Sort By:">Sort By:</label>
                     <select class="wide">
-                        <option data-display="Select">Nothing</option>
-                        <option value="Relevance">Relevance</option>
-                        <option value="Name, A to Z">Name, A to Z</option>
-                        <option value="Name, Z to A">Name, Z to A</option>
-                        <option value="Price, low to high">Price, low to high</option>
-                        <option value="Price, high to low">Price, high to low</option>
+                        <option data-display="Seç" data-az="Heç nə" data-en="Nothing">Select</option>
+                        <option value="Relevance" data-az="Əlaqəlilik" data-en="Relevance">Relevance</option>
+                        <option value="Name, A to Z" data-az="Ad, A-dan Z-yə" data-en="Name, A to Z">Name, A to Z</option>
+                        <option value="Name, Z to A" data-az="Ad, Z-dən A-ya" data-en="Name, Z to A">Name, Z to A</option>
+                        <option value="Price, low to high" data-az="Qiymət, aşağıdan yuxarı" data-en="Price, low to high">Price, low to high</option>
+                        <option value="Price, high to low" data-az="Qiymət, yuxarıdan aşağı" data-en="Price, high to low">Price, high to low</option>
                     </select>
                 </div>
-            </div>
+            </div>            
             <div class="products">
                 <div class="sidebar">
                     <div class="common-sidebar">
-                        <h3>Product categories</h3>
+                        <h3 data-az="Məhsul kateqoriyaları" data-en="Product categories">Product categories</h3>
                         <ul class="sidebar-list">
-                            <li><a href=""><i class="fa-solid fa-plus"></i>Accessories <span class="count">(14)</span></a>
-                            </li>
-                            <li><a href=""><i class="fa-solid fa-plus"></i>Decor <span class="count">(14)</span></a></li>
-                            <li><a href=""><i class="fa-solid fa-plus"></i>Furniture <span class="count">(28)</span></a>
-                            </li>
-                            <li><a href=""><i class="fa-solid fa-plus"></i>Lighting <span class="count">(14)</span></a></li>
-                            <li><a href=""><i class="fa-solid fa-plus"></i>Outdoor <span class="count">(14)</span></a></li>
-                            <li><a href=""><i class="fa-solid fa-plus"></i>Sports <span class="count">(13)</span></a></li>
-                            <li><a href=""><i class="fa-solid fa-plus"></i>Storage <span class="count">(9)</span></a></li>
-                            <li><a href=""><i class="fa-solid fa-plus"></i>Toys <span class="count">(9)</span></a></li>
-                            <li><a href=""><i class="fa-solid fa-plus"></i>Uncategorized <span class="count">(0)</span></a>
-                            </li>
+                            <li><a href=""><i class="fa-solid fa-plus"></i><span data-az="Aksessuarlar" data-en="Accessories">Accessories</span> <span class="count">(14)</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-plus"></i><span data-az="Dekor" data-en="Decor">Decor</span> <span class="count">(14)</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-plus"></i><span data-az="Mebel" data-en="Furniture">Furniture</span> <span class="count">(28)</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-plus"></i><span data-az="İşıqlandırma" data-en="Lighting">Lighting</span> <span class="count">(14)</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-plus"></i><span data-az="Xarici" data-en="Outdoor">Outdoor</span> <span class="count">(14)</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-plus"></i><span data-az="İdman" data-en="Sports">Sports</span> <span class="count">(13)</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-plus"></i><span data-az="Saxlama" data-en="Storage">Storage</span> <span class="count">(9)</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-plus"></i><span data-az="Oyuncaqlar" data-en="Toys">Toys</span> <span class="count">(9)</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-plus"></i><span data-az="Kategoriyasız" data-en="Uncategorized">Uncategorized</span> <span class="count">(0)</span></a></li>
                         </ul>
                     </div>
+                    
                     <div class="common-sidebar">
-                        <h3>Filter by price</h3>
+                        <h3 data-az="Qiymətə görə süz" data-en="Filter by price">Filter by price</h3>
                         <div class="range">
                             <span class="right"></span>
                             <div class="range-price"></div>
                             <span class="left"></span>
                         </div>
                         <div class="price">
-                            <button type="button" class="btn">Filter</button>
+                            <button type="button" class="btn" data-az="Süz" data-en="Filter">Filter</button>
                             <span>$0 - $900</span>
                         </div>
                     </div>
+                    
                     <div class="common-sidebar">
-                        <h3>Filter by</h3>
+                        <h3 data-az="Süz" data-en="Filter by">Filter by</h3>
                         <ul class="sidebar-list">
-                            <li><a href="#"><i class="fa-solid fa-plus"></i>Gold <span class="count">(1)</span></a></li>
-                            <li><a href="#"><i class="fa-solid fa-plus"></i>Green <span class="count">(1)</span></a></li>
-                            <li><a href="#"><i class="fa-solid fa-plus"></i>White <span class="count">(1)</span></a></li>
+                            <li><a href="#"><i class="fa-solid fa-plus"></i><span data-az="Qızıl" data-en="Gold">Gold</span> <span class="count">(1)</span></a></li>
+                            <li><a href="#"><i class="fa-solid fa-plus"></i><span data-az="Yaşıl" data-en="Green">Green</span> <span class="count">(1)</span></a></li>
+                            <li><a href="#"><i class="fa-solid fa-plus"></i><span data-az="Ağ" data-en="White">White</span> <span class="count">(1)</span></a></li>
                         </ul>
                     </div>
+                    
                     <div class="common-sidebar">
-                        <h3>Compare Products</h3>
+                        <h3 data-az="Müqayisə Məhsulları" data-en="Compare Products">Compare Products</h3>
                         <ul class="product-list">
                             <li>
                                 <a href="#" class="title">Cras neque metus</a>
@@ -195,12 +212,13 @@
                             </li>
                         </ul>
                         <div class="compare">
-                            <a href="">Clear all</a>
-                            <button>Compare</button>
+                            <a href="" data-az="Hamısını təmizlə" data-en="Clear all">Clear all</a>
+                            <button data-en="Compare" data-az="Müqayisə et">Compare</button>
                         </div>
                     </div>
+                    
                     <div class="common-sidebar">
-                        <h3>Product tags</h3>
+                        <h3 data-az="Məhsul etiketləri" data-en="Product tags">Product tags</h3>
                         <ul class="sidebar-tag">
                             <li><a href="#">blouse</a></li>
                             <li><a href="#">clothes</a></li>
@@ -208,14 +226,14 @@
                             <li><a href="#">handbag</a></li>
                             <li><a href="#">laptop</a></li>
                         </ul>
-                    </div>
+                    </div>                    
                 </div>
                 <div class="cards">
                     <div class="card">
                         <div class="all">
                             <div class="product-label">
-                                <span class="sale">-20%</span>
-                                <span class="new">New</span>
+                                <span class="sale" data-az="-%20" data-en="-20%">-20%</span>
+                                <span class="new" data-az="Yeni" data-en="New">New</span>
                             </div>
                             <div class="img">
                                 <img class="firstimg"
@@ -224,7 +242,7 @@
                                     src="https://htmldemo.net/ginza/ginza/assets/images/product/5_1-600x800.jpg" alt="">
                             </div>
                             <div class="addtocart">
-                                <a href="">Add to Cart</a>
+                                <a href="" data-az="Səbətə əlavə et" data-en="Add to Cart">Add to Cart</a>
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-solid fa-retweet"></i>
                                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -232,8 +250,8 @@
                         </div>
                         <div class="product-content">
                             <div class="product-category">
-                                <a href="">Vase</a>
-                                <p>Cillum dolore lorem ipsum decoration item</p>
+                                <a href="" data-az="Vaz" data-en="Vase">Vase</a>
+                                <p data-az="Cillum dolore lorem ipsum dekorasiya maddəsi" data-en="Cillum dolore lorem ipsum decoration item">Cillum dolore lorem ipsum decoration item</p>
                                 <div class="ratings">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -244,17 +262,13 @@
                                 </div>
                                 <span>$17.00 <del>$39.00</del></span>
                             </div>
-                            <p class="product-desc">Lorem ipsum
-                                dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et
-                                dolore magna aliqua.</p>
+                            <p class="product-desc" data-az="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." data-en="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="all">
                             <div class="product-label">
-                                <span class="sale">-20%</span>
+                                <span class="sale" data-az="-%20" data-en="-20%">-20%</span>
                             </div>
                             <div class="img">
                                 <img class="firstimg"
@@ -263,7 +277,7 @@
                                     src="https://htmldemo.net/ginza/ginza/assets/images/product/1_1-600x800.jpg" alt="">
                             </div>
                             <div class="addtocart">
-                                <a href="">Add to Cart</a>
+                                <a href="" data-az="Səbətə əlavə et" data-en="Add to Cart">Add to Cart</a>
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-solid fa-retweet"></i>
                                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -271,11 +285,8 @@
                         </div>
                         <div class="product-content">
                             <div class="product-category">
-                                <a href="">Sports</a>
-                                <p>Aliquam
-                                    lobortis est turpis mauris
-                                    egestas eget
-                                </p>
+                                <a href="" data-az="İdman" data-en="Sports">Sports</a>
+                                <p data-az="Aliquam lobortis est turpis mauris egestas eget" data-en="Aliquam lobortis est turpis mauris egestas eget">Aliquam lobortis est turpis mauris egestas eget</p>
                                 <div class="ratings">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -286,17 +297,13 @@
                                 </div>
                                 <span>$17.00</span>
                             </div>
-                            <p class="product-desc">Lorem ipsum
-                                dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et
-                                dolore magna aliqua.</p>
+                            <p class="product-desc" data-az="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." data-en="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="all">
                             <div class="product-label">
-                                <span class="new">New</span>
+                                <span class="new" data-az="Yeni" data-en="New">New</span>
                             </div>
                             <div class="img">
                                 <img class="firstimg"
@@ -305,7 +312,7 @@
                                     src="https://htmldemo.net/ginza/ginza/assets/images/product/2_1-600x800.jpg" alt="">
                             </div>
                             <div class="addtocart">
-                                <a href="">Add to Cart</a>
+                                <a href="" data-az="Səbətə əlavə et" data-en="Add to Cart">Add to Cart</a>
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-solid fa-retweet"></i>
                                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -313,10 +320,8 @@
                         </div>
                         <div class="product-content">
                             <div class="product-category">
-                                <a href="">Vase</a>
-                                <p>Auctor
-                                    gravida enim pellentesque quam
-                                    ut risus</p>
+                                <a href="" data-az="Vaz" data-en="Vase">Vase</a>
+                                <p data-az="Auctor gravida enim pellentesque quam ut risus" data-en="Auctor gravida enim pellentesque quam ut risus">Auctor gravida enim pellentesque quam ut risus</p>
                                 <div class="ratings">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -327,17 +332,13 @@
                                 </div>
                                 <span>$53.00 <del>$69.00</del></span>
                             </div>
-                            <p class="product-desc">Lorem ipsum
-                                dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et
-                                dolore magna aliqua.</p>
+                            <p class="product-desc" data-az="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." data-en="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="all">
                             <div class="product-label">
-                                <span class="new">New</span>
+                                <span class="new" data-az="Yeni" data-en="New">New</span>
                             </div>
                             <div class="img">
                                 <img class="firstimg"
@@ -346,7 +347,7 @@
                                     src="https://htmldemo.net/ginza/ginza/assets/images/product/9_1-600x800.jpg" alt="">
                             </div>
                             <div class="addtocart">
-                                <a href="">Add to Cart</a>
+                                <a href="" data-az="Səbətə əlavə et" data-en="Add to Cart">Add to Cart</a>
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-solid fa-retweet"></i>
                                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -354,10 +355,8 @@
                         </div>
                         <div class="product-content">
                             <div class="product-category">
-                                <a href="">Vase</a>
-                                <p>Cillum
-                                    dolore tortor nisl fermentum
-                                    quam</p>
+                                <a href="" data-az="Vaz" data-en="Vase">Vase</a>
+                                <p data-az="Cillum dolore tortor nisl fermentum quam" data-en="Cillum dolore tortor nisl fermentum quam">Cillum dolore tortor nisl fermentum quam</p>
                                 <div class="ratings">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -368,26 +367,23 @@
                                 </div>
                                 <span>$99.00 <del>$120.00</del></span>
                             </div>
-                            <p class="product-desc">Lorem ipsum
-                                dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et
-                                dolore magna aliqua.</p>
+                            <p class="product-desc" data-az="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." data-en="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="all">
                             <div class="product-label">
-                                <span class="new">New</span>
+                                <span class="new" data-az="Yeni" data-en="New">New</span>
                             </div>
                             <div class="img">
                                 <img class="firstimg"
                                     src="https://htmldemo.net/ginza/ginza/assets/images/product/10-600x800.jpg" alt="">
                                 <img class="secondimg"
-                                    src="https://htmldemo.net/ginza/ginza/assets/images/product/10_1-600x800.jpg" alt="">
+                                    src="https://htmldemo.net/ginza/ginza/assets/images/product/10_1-600x800.jpg"
+                                    alt="">
                             </div>
                             <div class="addtocart">
-                                <a href="">Add to Cart</a>
+                                <a href="" data-az="Səbətə əlavə et" data-en="Add to Cart">Add to Cart</a>
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-solid fa-retweet"></i>
                                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -395,8 +391,8 @@
                         </div>
                         <div class="product-content">
                             <div class="product-category">
-                                <a href="">Vase</a>
-                                <p>Cillum dolore lorem ipsum decoration item</p>
+                                <a href="" data-az="Vaz" data-en="Vase">Vase</a>
+                                <p data-az="Cillum dolore lorem ipsum dekorasiya maddəsi" data-en="Cillum dolore lorem ipsum decoration item">Cillum dolore lorem ipsum decoration item</p>
                                 <div class="ratings">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -407,26 +403,23 @@
                                 </div>
                                 <span>$47.00 <del>$55.00</del></span>
                             </div>
-                            <p class="product-desc">Lorem ipsum
-                                dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et
-                                dolore magna aliqua.</p>
+                            <p class="product-desc" data-az="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." data-en="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="all">
                             <div class="product-label">
-                                <span class="new">New</span>
+                                <span class="new" data-az="Yeni" data-en="New">New</span>
                             </div>
                             <div class="img">
                                 <img class="firstimg"
                                     src="https://htmldemo.net/ginza/ginza/assets/images/product/11-600x800.jpg" alt="">
                                 <img class="secondimg"
-                                    src="https://htmldemo.net/ginza/ginza/assets/images/product/11_1-600x800.jpg" alt="">
+                                    src="https://htmldemo.net/ginza/ginza/assets/images/product/11_1-600x800.jpg"
+                                    alt="">
                             </div>
                             <div class="addtocart">
-                                <a href="">Add to Cart</a>
+                                <a href="" data-az="Səbətə əlavə et" data-en="Add to Cart">Add to Cart</a>
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-solid fa-retweet"></i>
                                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -434,8 +427,8 @@
                         </div>
                         <div class="product-content">
                             <div class="product-category">
-                                <a href="">Vase</a>
-                                <p>Cillum dolore lorem ipsum decoration item</p>
+                                <a href="" data-az="Vaz" data-en="Vase">Vase</a>
+                                <p data-az="Cillum dolore lorem ipsum dekorasiya maddəsi" data-en="Cillum dolore lorem ipsum decoration item">Cillum dolore lorem ipsum decoration item</p>
                                 <div class="ratings">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -446,18 +439,14 @@
                                 </div>
                                 <span>$17.00 <del>$39.00</del></span>
                             </div>
-                            <p class="product-desc">Lorem ipsum
-                                dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et
-                                dolore magna aliqua.</p>
+                            <p class="product-desc" data-az="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." data-en="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="all">
                             <div class="product-label">
-                                <span class="sale">-20%</span>
-                                <span class="new">New</span>
+                                <span class="sale" data-az="-%20" data-en="-20%">-20%</span>
+                                <span class="new" data-az="Yeni" data-en="New">New</span>
                             </div>
                             <div class="img">
                                 <img class="firstimg"
@@ -466,7 +455,7 @@
                                     src="https://htmldemo.net/ginza/ginza/assets/images/product/6_1-600x800.jpg" alt="">
                             </div>
                             <div class="addtocart">
-                                <a href="">Add to Cart</a>
+                                <a href="" data-az="Səbətə əlavə et" data-en="Add to Cart">Add to Cart</a>
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-solid fa-retweet"></i>
                                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -474,8 +463,8 @@
                         </div>
                         <div class="product-content">
                             <div class="product-category">
-                                <a href="">Vase</a>
-                                <p>Cillum dolore lorem ipsum decoration item</p>
+                                <a href="" data-az="Vaz" data-en="Vase">Vase</a>
+                                <p data-az="Cillum dolore lorem ipsum dekorasiya maddəsi" data-en="Cillum dolore lorem ipsum decoration item">Cillum dolore lorem ipsum decoration item</p>
                                 <div class="ratings">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -486,18 +475,14 @@
                                 </div>
                                 <span>$171.00</span>
                             </div>
-                            <p class="product-desc">Lorem ipsum
-                                dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et
-                                dolore magna aliqua.</p>
+                            <p class="product-desc" data-az="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." data-en="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="all">
                             <div class="product-label">
-                                <span class="sale">-20%</span>
-                                <span class="new">New</span>
+                                <span class="sale" data-az="-%20" data-en="-20%">-20%</span>
+                                <span class="new" data-az="Yeni" data-en="New">New</span>
                             </div>
                             <div class="img">
                                 <img class="firstimg"
@@ -506,7 +491,7 @@
                                     src="https://htmldemo.net/ginza/ginza/assets/images/product/7_1-600x800.jpg" alt="">
                             </div>
                             <div class="addtocart">
-                                <a href="">Add to Cart</a>
+                                <a href="" data-az="Səbətə əlavə et" data-en="Add to Cart">Add to Cart</a>
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-solid fa-retweet"></i>
                                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -514,8 +499,8 @@
                         </div>
                         <div class="product-content">
                             <div class="product-category">
-                                <a href="">Accessories</a>
-                                <p>Cillum dolore lorem ipsum decoration item</p>
+                                <a href="" data-az="Aksesuarlar" data-en="Accessories">Accessories</a>
+                                <p data-az="Cillum dolore lorem ipsum dekorasiya maddəsi" data-en="Cillum dolore lorem ipsum decoration item">Cillum dolore lorem ipsum decoration item</p>
                                 <div class="ratings">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -526,26 +511,23 @@
                                 </div>
                                 <span>$37.00 <del>$47.00</del></span>
                             </div>
-                            <p class="product-desc">Lorem ipsum
-                                dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et
-                                dolore magna aliqua.</p>
+                            <p class="product-desc" data-az="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." data-en="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="all">
                             <div class="product-label">
-                                <span class="sale">-20%</span>
+                                <span class="sale" data-az="-%20" data-en="-20%">-20%</span>
                             </div>
                             <div class="img">
                                 <img class="firstimg"
                                     src="https://htmldemo.net/ginza/ginza/assets/images/product/12-600x800.jpg" alt="">
                                 <img class="secondimg"
-                                    src="https://htmldemo.net/ginza/ginza/assets/images/product/12_1-600x800.jpg" alt="">
+                                    src="https://htmldemo.net/ginza/ginza/assets/images/product/12_1-600x800.jpg"
+                                    alt="">
                             </div>
                             <div class="addtocart">
-                                <a href="">Add to Cart</a>
+                                <a href="" data-az="Səbətə əlavə et" data-en="Add to Cart">Add to Cart</a>
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-solid fa-retweet"></i>
                                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -553,8 +535,8 @@
                         </div>
                         <div class="product-content">
                             <div class="product-category">
-                                <a href="">Lighting</a>
-                                <p>Cillum dolore lorem ipsum decoration item</p>
+                                <a href="" data-az="Işıqlandırma" data-en="Lighting">Lighting</a>
+                                <p data-az="Cillum dolore lorem ipsum dekorasiya maddəsi" data-en="Cillum dolore lorem ipsum decoration item">Cillum dolore lorem ipsum decoration item</p>
                                 <div class="ratings">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -565,11 +547,7 @@
                                 </div>
                                 <span>$88.00 <del>$95.00</del></span>
                             </div>
-                            <p class="product-desc">Lorem ipsum
-                                dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et
-                                dolore magna aliqua.</p>
+                            <p class="product-desc" data-az="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." data-en="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
                     <ul class="page-pagination">
@@ -580,19 +558,26 @@
                         <li><a href="">05</a></li>
                         <li><a href="">Next</a></li>
                     </ul>
-                </div>
+                </div>                
             </div>
         </section>
         <section class="discount">
             <div class="container">
-                <p>Special Ofers For Subscribers</p>
-                <h3>Ten Percent Member Discount</h3>
-                <p class="desc">Subscribe to our newsletters now and stay up to date with new
-                    collections, the latest lookbooks and exclusive offers.</p>
+                <p data-az="Xüsusi Təkliflər Abunəçilər Üçün" data-en="Special Offers For Subscribers">Special Offers
+                    For Subscribers</p>
+                <h3 data-az="On Faiz Üzv Endirimi" data-en="Ten Percent Member Discount">Ten Percent Member Discount
+                </h3>
+                <p class="desc"
+                    data-az="İndi bülletenlərimizə abunə olun və yeni kolleksiyalar, son lookbooklar və eksklüziv təkliflərdən xəbərdar olun."
+                    data-en="Subscribe to our newsletters now and stay up to date with new collections, the latest lookbooks and exclusive offers.">
+                    Subscribe to our newsletters now and stay up to date with new collections, the latest lookbooks and
+                    exclusive offers.
+                </p>
                 <form action="">
-                    <input type="email" placeholder="Enter Your Email Address Here...">
+                    <input type="email" placeholder="Enter Your Email Address Here..."
+                        data-az="E-poçt Ünvanınızı Buraya Daxil Edin..." data-en="Enter Your Email Address Here...">
                     <button>
-                        <p class="submit">SUBSCRIBE!</p>
+                        <p class="submit" data-az="ABUNƏ OL!" data-en="SUBSCRIBE!">SUBSCRIBE!</p>
                     </button>
                 </form>
             </div>
@@ -605,9 +590,11 @@
                     <div class="logo">
                         <img src="https://htmldemo.net/ginza/ginza/assets/images/logo.png" alt="">
                     </div>
-                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,<br>
-                        vel illum dolore eu feugiat nulla facilisis.</p>
-                    <h3>Follow Us On Social:</h3>
+                    <p data-az="Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis."
+                       data-en="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.
+                    </p>
+                    <h3 data-az="Sosial Şəbəkələrdə Bizi İzləyin:" data-en="Follow Us On Social:">Follow Us On Social:</h3>
                     <div class="social">
                         <i class="fa-brands fa-facebook-f"></i>
                         <i class="fa-brands fa-twitter"></i>
@@ -617,42 +604,47 @@
                     </div>
                 </div>
                 <ul class="delivery">
-                    <li class="firstlist"><a href="">Opening Time</a></li>
-                    <li><a href="">Mon – Fri: 8AM – 10PM</a></li>
-                    <li><a href="">Sat: 9AM-8PM</a></li>
-                    <li><a href="">Sun: Closed</a></li>
-                    <li class="endlist"><a href="">We Work All The Holidays</a></li>
+                    <li class="firstlist"><a href="" data-az="Açılış Vaxtı" data-en="Opening Time">Opening Time</a></li>
+                    <li><a href="" data-az="B.e. – C.a.: 8AM – 10PM" data-en="Mon – Fri: 8AM – 10PM">Mon – Fri: 8AM – 10PM</a></li>
+                    <li><a href="" data-az="Şənbə: 9AM-8PM" data-en="Sat: 9AM-8PM">Sat: 9AM-8PM</a></li>
+                    <li><a href="" data-az="Bazar: Bağlıdır" data-en="Sun: Closed">Sun: Closed</a></li>
+                    <li class="endlist"><a href="" data-az="Biz Bütün Bayramlarda İşləyirik" data-en="We Work All The Holidays">We Work All The Holidays</a></li>
                 </ul>
                 <ul class="delivery">
-                    <li class="firstlist"><a href="">My Account</a></li>
-                    <li><a href="">My account</a></li>
-                    <li><a href="">Wishlist</a></li>
-                    <li><a href="">Order Tracking</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Shipping Information</a></li>
+                    <li class="firstlist"><a href="" data-az="Hesabım" data-en="My Account">My Account</a></li>
+                    <li><a href="" data-az="Hesabım" data-en="My account">My account</a></li>
+                    <li><a href="" data-az="Arzu Siyahısı" data-en="Wishlist">Wishlist</a></li>
+                    <li><a href="" data-az="Sifarişin İzlənməsi" data-en="Order Tracking">Order Tracking</a></li>
+                    <li><a href="" data-az="Məxfilik Siyasəti" data-en="Privacy Policy">Privacy Policy</a></li>
+                    <li><a href="" data-az="Göndərmə Məlumatı" data-en="Shipping Information">Shipping Information</a></li>
                 </ul>
                 <ul class="delivery">
-                    <li class="firstlist"><a href="">About Us</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Shopping Guide</a></li>
-                    <li><a href="">Delivery Information</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Our Store</a></li>
+                    <li class="firstlist"><a href="" data-az="Haqqımızda" data-en="About Us">About Us</a></li>
+                    <li><a href="" data-az="Haqqımızda" data-en="About Us">About Us</a></li>
+                    <li><a href="" data-az="Alış-veriş Bələdçisi" data-en="Shopping Guide">Shopping Guide</a></li>
+                    <li><a href="" data-az="Çatdırılma Məlumatı" data-en="Delivery Information">Delivery Information</a></li>
+                    <li><a href="" data-az="Məxfilik Siyasəti" data-en="Privacy Policy">Privacy Policy</a></li>
+                    <li><a href="" data-az="Mağazamız" data-en="Our Store">Our Store</a></li>
                 </ul>
+                
             </div>
         </section>
         <section class="copyright">
             <div class="container">
-                <p>Copyright ©2023 <a href="#">Ginza</a>. All rights reserved.</p>
+                <p data-az="Müəllif hüquqları ©2023" data-en="Copyright ©2023">
+                    <a href="#">Ginza</a>. Bütün hüquqlar qorunur.
+                </p>
                 <ul>
-                    <li><a href="#">Policy</a></li>
-                    <li><a href="#">Questions</a></li>
-                    <li><a href="#">Affiliate</a></li>
-                    <li><a href="#">Help</a></li>
+                    <li><a href="#" data-az="Siyasət" data-en="Policy">Policy</a></li>
+                    <li><a href="#" data-az="Suallar" data-en="Questions">Questions</a></li>
+                    <li><a href="#" data-az="Tərəfdaşlıq" data-en="Affiliate">Affiliate</a></li>
+                    <li><a href="#" data-az="Kömək" data-en="Help">Help</a></li>
                 </ul>
-            </div>
+            </div>            
         </section>
     </footer>
+    <script src="./src/js/mode.js"></script>
+    <script src="./src/js/lang.js"></script>
 </body>
 
 </html>

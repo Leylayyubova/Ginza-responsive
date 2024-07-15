@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header style="background-color: #fff;" class="ginza">
+    <header class="ginza">
         <div class="container">
             <div class="icon">
                 <i class="fa-brands fa-facebook-f"></i>
@@ -28,94 +28,110 @@
             </div>
             <div class="shop">
                 <div class="glass">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-bag-shopping"></i>
-                <span>2</span>
-            </div>
-            <i class="fa-solid fa-bars"></i>              
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>2</span>
+                </div>
+                <i class="fa-solid fa-bars"></i>
+                <button id="dark-mode-toggle">
+                    <i id="icon-toggle" class="fas fa-sun"></i>
+                </button>
+                <button id="language-toggle">AZ</button>
             </div>
         </div>
         <div class="text">
             <ul class="menu">
-                <li><a href="./index.html">Home</a>
+                <li><a href="./index.html" data-az="Əsas" data-en="Home">Əsas</a>
                     <ul class="sub-menu">
-                        <li><a href="">Home One</a></li>
-                        <li><a href="">Home Two</a></li>
-                        <li><a href="">Home Three</a></li>
-                        <li><a href="">Home Four</a></li>
+                        <li><a href="" data-az="Əsas Bir" data-en="Home One">Əsas Bir</a></li>
+                        <li><a href="" data-az="Əsas İki" data-en="Home Two">Əsas İki</a></li>
+                        <li><a href="" data-az="Əsas Üç" data-en="Home Three">Əsas Üç</a></li>
+                        <li><a href="" data-az="Əsas Dörd" data-en="Home Four">Əsas Dörd</a></li>
                     </ul>
                 </li>
-                <li><a href="./leftsidebar.html">Shop</a>
+                <li><a href="./leftsidebar.html" data-az="Mağaza" data-en="Shop">Mağaza</a>
                     <ul class="mega-menu">
-                        <li><a href="" class="item">Pages</a>
+                        <li><a href="" class="item" data-az="Səhifələr" data-en="Pages">Səhifələr</a>
                             <ul>
-                                <li><a href="">Compare</a></li>
-                                <li><a href="">Shopping Cart</a></li>
-                                <li><a href="">Checkout</a></li>
-                                <li><a href="">Wishlist</a></li>
-                                <li><a href="">My Account</a></li>
-                                <li><a href="">Login Register</a></li>
-                                <li><a href="">Frequently Questions</a></li>
-                                <li><a href="">Error 404</a></li>
+                                <li><a href="" data-az="Müqayisə" data-en="Compare">Müqayisə</a></li>
+                                <li><a href="" data-az="Alış-veriş Səbəti" data-en="Shopping Cart">Alış-veriş Səbəti</a>
+                                </li>
+                                <li><a href="" data-az="Ödəniş" data-en="Checkout">Ödəniş</a></li>
+                                <li><a href="" data-az="Arzu Sırası" data-en="Wishlist">Arzu Sırası</a></li>
+                                <li><a href="" data-az="Mənim Hesabım" data-en="My Account">Mənim Hesabım</a></li>
+                                <li><a href="" data-az="Giriş Qeydiyyat" data-en="Login Register">Giriş Qeydiyyat</a>
+                                </li>
+                                <li><a href="" data-az="Tez-tez Verilən Suallar" data-en="Frequently Questions">Tez-tez
+                                        Verilən Suallar</a></li>
+                                <li><a href="" data-az="Səhv 404" data-en="Error 404">Səhv 404</a></li>
                             </ul>
                         </li>
-                        <li><a href="" class="item">Shop Layout</a>
+                        <li><a href="" class="item" data-az="Mağaza Dizaynı" data-en="Shop Layout">Mağaza Dizaynı</a>
                             <ul>
-                                <li><a href="">Shop</a></li>
-                                <li><a href="">Shop Three Column</a></li>
-                                <li><a href="">Shop Four Column</a></li>
-                                <li><a href="">Shop Right Sidebar</a></li>
-                                <li><a href="">Shop List No Sidebar</a></li>
-                                <li><a href="./leftsidebar.html">Shop List Left Sidebar</a>
-                                </li>
-                                <li><a href="">Shop List Right
-                                        Sidebar</a></li>
+                                <li><a href="" data-az="Mağaza" data-en="Shop">Mağaza</a></li>
+                                <li><a href="" data-az="Üç Sütunlu Mağaza" data-en="Shop Three Column">Üç Sütunlu
+                                        Mağaza</a></li>
+                                <li><a href="" data-az="Dörd Sütunlu Mağaza" data-en="Shop Four Column">Dörd Sütunlu
+                                        Mağaza</a></li>
+                                <li><a href="" data-az="Sağ Barlı Mağaza" data-en="Shop Right Sidebar">Sağ Barlı
+                                        Mağaza</a></li>
+                                <li><a href="" data-az="Sütunsuz Mağaza Siyahısı"
+                                        data-en="Shop List No Sidebar">Sütunsuz Mağaza Siyahısı</a></li>
+                                <li><a href="./leftsidebar.html" data-az="Sola Sütunlu Mağaza Siyahısı"
+                                        data-en="Shop List Left Sidebar">Sola Sütunlu Mağaza Siyahısı</a></li>
+                                <li><a href="" data-az="Sağ Sütunlu Mağaza Siyahısı"
+                                        data-en="Shop List Right Sidebar">Sağ Sütunlu Mağaza Siyahısı</a></li>
                             </ul>
                         </li>
-                        <li><a href="#" class="item">Product Details</a>
+                        <li><a href="#" class="item" data-az="Məhsul Detalları" data-en="Product Details">Məhsul
+                                Detalları</a>
                             <ul>
-                                <li><a href="">Single Product</a></li>
-                                <li><a href="">Variable Product</a></li>
-                                <li><a href="">Affiliate Product</a>
+                                <li><a href="" data-az="Tək Məhsul" data-en="Single Product">Tək Məhsul</a></li>
+                                <li><a href="" data-az="Dəyişən Məhsul" data-en="Variable Product">Dəyişən Məhsul</a>
                                 </li>
-                                <li><a href="">Group Product</a></li>
-                                <li><a href="">Product Left Tab</a>
+                                <li><a href="" data-az="Əlil Məhsul" data-en="Affiliate Product">Əlil Məhsul</a></li>
+                                <li><a href="" data-az="Qrup Məhsulu" data-en="Group Product">Qrup Məhsulu</a></li>
+                                <li><a href="" data-az="Məhsul Sol Tab" data-en="Product Left Tab">Məhsul Sol Tab</a>
                                 </li>
-                                <li><a href="">Product Right Tab</a>
+                                <li><a href="" data-az="Məhsul Sağ Tab" data-en="Product Right Tab">Məhsul Sağ Tab</a>
                                 </li>
-                                <li><a href="">Product Gallery
-                                        Left</a></li>
-                                <li><a href="">Product Gallery
-                                        Right</a></li>
+                                <li><a href="" data-az="Məhsul Qalereya Sol" data-en="Product Gallery Left">Məhsul
+                                        Qalereya Sol</a></li>
+                                <li><a href="" data-az="Məhsul Qalereya Sağ" data-en="Product Gallery Right">Məhsul
+                                        Qalereya Sağ</a></li>
                             </ul>
                         </li>
-                        <li><a href="" class="item">Product Details</a>
+                        <li><a href="" class="item" data-az="Məhsul Detalları" data-en="Product Details">Məhsul
+                                Detalları</a>
                             <ul>
-                                <li><a href="">Product Sticky
-                                        Left</a></li>
-                                <li><a href="">Product Sticky
-                                        Right</a></li>
-                                <li><a href="">Product Box Slider</a>
-                                </li>
+                                <li><a href="" data-az="Məhsul Sticky Sol" data-en="Product Sticky Left">Məhsul Sticky
+                                        Sol</a></li>
+                                <li><a href="" data-az="Məhsul Sticky Sağ" data-en="Product Sticky Right">Məhsul Sticky
+                                        Sağ</a></li>
+                                <li><a href="" data-az="Məhsul Qutu Slayderi" data-en="Product Box Slider">Məhsul Qutu
+                                        Slayderi</a></li>
                             </ul>
                         </li>
                     </ul>
                 </li>
-                <li><a href="">Blog</a>
+                <li><a href="" data-az="Blog" data-en="Blog">Blog</a>
                     <ul class="sub-menu">
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Blog Right Sidebar</a></li>
-                        <li><a href="">Blog Grid</a></li>
-                        <li><a href="">Blog Large Image</a></li>
-                        <li><a href="">Blog No Sidebar</a></li>
-                        <li><a href="">Blog Details</a></li>
-                        <li><a href="">Blog Details Gallery</a></li>
-                        <li><a href="">Blog Details Audio</a></li>
-                        <li><a href="">Blog Details Video</a></li>
+                        <li><a href="" data-az="Blog" data-en="Blog">Blog</a></li>
+                        <li><a href="" data-az="Blog Sağ Barlı" data-en="Blog Right Sidebar">Blog Sağ Barlı</a></li>
+                        <li><a href="" data-az="Blog Qaralama" data-en="Blog Grid">Blog Qaralama</a></li>
+                        <li><a href="" data-az="Blog Böyük Şəkil" data-en="Blog Large Image">Blog Böyük Şəkil</a></li>
+                        <li><a href="" data-az="Blog Səhifəsiz" data-en="Blog No Sidebar">Blog Səhifəsiz</a></li>
+                        <li><a href="" data-az="Blog Detalları" data-en="Blog Details">Blog Detalları</a></li>
+                        <li><a href="" data-az="Blog Detalları Qalereya" data-en="Blog Details Gallery">Blog Detalları
+                                Qalereya</a></li>
+                        <li><a href="" data-az="Blog Detalları Audio" data-en="Blog Details Audio">Blog Detalları
+                                Audio</a></li>
+                        <li><a href="" data-az="Blog Detalları Video" data-en="Blog Details Video">Blog Detalları
+                                Video</a></li>
                     </ul>
                 </li>
-                <li><a href="./about.html">About us</a></li>
-                <li><a href="">Contact us</a></li>
+                <li><a href="./about.html" data-az="Haqqımızda" data-en="About us">Haqqımızda</a></li>
+                <li><a href="" data-az="Bizimlə əlaqə" data-en="Contact us">Bizimlə əlaqə</a></li>
             </ul>
         </div>
     </header>
@@ -131,12 +147,20 @@
                 <div class="img">
                     <img src="https://htmldemo.net/ginza/ginza/assets/images/about/about-us-banner1.jpg" alt="">
                 </div>
-                <h4>We are a digital agency focused on delivering content and utility<br> user-experiences.</h4>
-                <p>Adipiscing lacus ut elementum, nec duis, tempor litora turpis dapibus. Imperdiet cursus odio tortor
-                    in elementum. Egestas nunc eleifend feugiat lectus laoreet, vel nunc taciti integer cras. Hac pede
-                    dis, praesent nibh ac dui mauris sit. Pellentesque mi, facilisi mauris, elit sociis leo sodales
-                    accumsan. Iaculis ac fringilla torquent lorem consectetuer, sociosqu phasellus risus urna aliquam,
-                    ornare.</p>
+                <div>
+                    <h4 data-en="We are a digital agency focused on delivering content and utility user-experiences."
+                        data-az="Biz məzmun və istifadəçi təcrübələri təqdim etməyə yönəlmiş rəqəmsal agentlikyik.">
+                        Biz məzmun və istifadəçi təcrübələri təqdim etməyə yönəlmiş rəqəmsal agentlikyik.
+                    </h4>
+                    <p data-en="Adipiscing lacus ut elementum, nec duis, tempor litora turpis dapibus. Imperdiet cursus odio tortor in elementum. Egestas nunc eleifend feugiat lectus laoreet, vel nunc taciti integer cras. Hac pede dis, praesent nibh ac dui mauris sit. Pellentesque mi, facilisi mauris, elit sociis leo sodales accumsan. Iaculis ac fringilla torquent lorem consectetuer, sociosqu phasellus risus urna aliquam, ornare."
+                        data-az="Lacus ut elementum, nec duis, tempor litora turpis dapibus. Imperdiet cursus odio tortor in elementum. Egestas nunc eleifend feugiat lectus laoreet, vel nunc taciti integer cras. Hac pede dis, praesent nibh ac dui mauris sit. Pellentesque mi, facilisi mauris, elit sociis leo sodales accumsan. Iaculis ac fringilla torquent lorem consectetuer, sociosqu phasellus risus urna aliquam, ornare.">
+                        Lacus ut elementum, nec duis, tempor litora turpis dapibus. Imperdiet cursus odio tortor in
+                        elementum. Egestas nunc eleifend feugiat lectus laoreet, vel nunc taciti integer cras. Hac pede
+                        dis, praesent nibh ac dui mauris sit. Pellentesque mi, facilisi mauris, elit sociis leo sodales
+                        accumsan. Iaculis ac fringilla torquent lorem consectetuer, sociosqu phasellus risus urna
+                        aliquam, ornare.
+                    </p>
+                </div>
                 <div class="signiture">
                     <img src="https://htmldemo.net/ginza/ginza/assets/images/about/about-us-signature.png" alt="">
                 </div>
@@ -145,23 +169,34 @@
         <section class="creative">
             <div class="container">
                 <div class="boxes">
+
                     <div class="box">
                         <img src="https://htmldemo.net/ginza/ginza/assets/images/icons/about-us-policy1.png" alt="">
-                        <h4>Creative Design</h4>
-                        <p>Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit
-                            amet enim</p>
+                        <h4 data-en="Creative Design" data-az="Kreativ Dizayn">Kreativ Dizayn</h4>
+                        <p data-en="Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit amet enim"
+                            data-az="Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit amet enim">
+                            Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit
+                            amet enim
+                        </p>
                     </div>
                     <div class="box">
                         <img src="https://htmldemo.net/ginza/ginza/assets/images/icons/about-us-policy2.png" alt="">
-                        <h4>100% Money Back Guarantee</h4>
-                        <p>Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit
-                            amet enim</p>
+                        <h4 data-en="100% Money Back Guarantee" data-az="100% Pulun Geri Qaytarılması Zəmanəti">100%
+                            Pulun Geri Qaytarılması Zəmanəti</h4>
+                        <p data-en="Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit amet enim"
+                            data-az="Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit amet enim">
+                            Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit
+                            amet enim
+                        </p>
                     </div>
                     <div class="box">
                         <img src="https://htmldemo.net/ginza/ginza/assets/images/icons/about-us-policy3.png" alt="">
-                        <h4>Online Support 24/7</h4>
-                        <p>Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit
-                            amet enim</p>
+                        <h4 data-en="Online Support 24/7" data-az="24/7 Onlayn Dəstək">24/7 Onlayn Dəstək</h4>
+                        <p data-en="Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit amet enim"
+                            data-az="Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit amet enim">
+                            Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit
+                            amet enim
+                        </p>
                     </div>
                 </div>
             </div>
@@ -171,94 +206,65 @@
                 <div class="cards">
                     <div class="card">
                         <img src="https://htmldemo.net/ginza/ginza/assets/images/about/about-1.jpg" alt="">
-                        <h4>What do we do?</h4>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        <h4 data-az="Nə edirik?" data-en="What do we do?">What do we do?</h4>
+                        <p data-az="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto"
+                           data-en="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                             laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
                             architecto</p>
                     </div>
                     <div class="card">
                         <img src="https://htmldemo.net/ginza/ginza/assets/images/about/about-2.jpg" alt="">
-                        <h4>Our Mission</h4>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        <h4 data-az="Missiyamız" data-en="Our Mission">Our Mission</h4>
+                        <p data-az="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto"
+                           data-en="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                             laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
                             architecto</p>
                     </div>
                     <div class="card">
                         <img src="https://htmldemo.net/ginza/ginza/assets/images/about/about-3.jpg" alt="">
-                        <h4>History Of Us</h4>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        <h4 data-az="Bizim Tariximiz" data-en="History Of Us">History Of Us</h4>
+                        <p data-az="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto"
+                           data-en="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                             laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
                             architecto</p>
                     </div>
-                </div>
+                </div>                
             </div>
         </section>
         <section class="choose">
             <div class="container">
-                <h3>What can we do for you ?</h3>
+                <h3 data-az="Sizə nə təklif edə bilərik?" data-en="What can we do for you?">What can we do for you?</h3>
                 <div class="faq-accordion">
                     <div class="tab">
                         <input type="checkbox" name="accordion-1" id="cb1" checked>
-                        <label for="cb1" class="tab__label">
-                            Why should clients choose you
-                        </label>
+                        <label for="cb1" class="tab__label" data-az="Müştərilərin sizi seçməli səbəbləri nələrdir?" data-en="Why should clients choose you">Why should clients choose you</label>
                         <div class="content">
-                            <p>
-                                We are the most friendliest people you will meet. All our tradsemen would bend over
-                                backwards to help all our customers. We offer huge range of tradesmen of which are all
-                                qualified and insured. We have 100% feedback on all sites we offer work to.
-                            </p>
+                            <p data-az="Biz ən dostlu insanlarıyıq. Bütün işçilərimiz müştərilərimizə kömək etmək üçün sürətlədirlər. Təqdim etdiyimiz bütün əməkdaşlarımız mütəxəssis və sığortalıdır. Təklif etdiyimiz işlər üzrə 100% geribildirimə malikik."
+                                data-en="We are the most friendliest people you will meet. All our tradesmen would bend over backwards to help all our customers. We offer a huge range of tradesmen of which are all qualified and insured. We have 100% feedback on all sites we offer work to.">We are the most friendliest people you will meet. All our tradesmen would bend over
+                                backwards to help all our customers. We offer a huge range of tradesmen of which are all
+                                qualified and insured. We have 100% feedback on all sites we offer work to.</p>
                         </div>
                     </div>
                     <div class="tab">
                         <input type="checkbox" name="accordion-1" id="cb2">
-                        <label for="cb2" class="tab__label">
-                            Which areas of construction do you cover
-                            </label>
+                        <label for="cb2" class="tab__label" data-az="Hansı inşaat sahələrini örtüyürsünüz?" data-en="Which areas of construction do you cover">Which areas of construction do you cover</label>
                         <div class="content">
-                           <p>
-                            We cover all aspects of building works from ground works to roofing, 
-                            refurbishments &amp; extensions, interior and exterior works carried out. We also cover all aspects of building work with our dedicated building division team. All our landscape services are undertaken both commercially and domestically.
-                        </p>
+                            <p data-az="Biz torpaq işlərindən damma əməliyyatlarına, yenidənqurma və genişlənmələrə, daxili və xarici işlərədək bütün bina işlərinin aspektlərini örtürük. Bizim mütəxəssis bina bölməsi komandası ilə bütün bina işlərinin aspektlərini örtürük. Bütün peyzaj xidmətlərimiz ticari və ev tərəfindən həyata keçirilir."
+                                data-en="We cover all aspects of building works from ground works to roofing, refurbishments & extensions, interior and exterior works carried out. We also cover all aspects of building work with our dedicated building division team. All our landscape services are undertaken both commercially and domestically.">We cover all aspects of building works from ground works to roofing, refurbishments &amp; extensions, interior and exterior works carried out. We also cover all aspects of building work with our dedicated building division team. All our landscape services are undertaken both commercially and domestically.</p>
                         </div>
                     </div>
                     <div class="tab">
-                        <input type="checkbox" name="accordion-1" id="cb2">
-                        <label for="cb2" class="tab__label">              
-                            How do you manage construction quality
-                            </label>
+                        <input type="checkbox" name="accordion-1" id="cb3">
+                        <label for="cb3" class="tab__label" data-az="Inşaat keyfiyyətini necə idarə edirsiniz?" data-en="How do you manage construction quality">How do you manage construction quality</label>
                         <div class="content">
-                          <p>
-                            The system for managing quality should encompass the organizational structure, procedures, processes, and resources, as well as activities to ensure confidence that the API will meet its intended specifications for quality and purity. All quality-related activities should be defined and documented.
-                        </p>
-                        </div>
-                    </div>
-                    <div class="tab">
-                        <input type="checkbox" name="accordion-1" id="cb2">
-                        <label for="cb2" class="tab__label">
-                            Which areas of construction do you cover
-                            </label>
-                        <div class="content">
-                          <p>
-                            The system for managing quality should encompass the organizational structure, procedures, processes, and resources, as well as activities to ensure confidence that the API will meet its intended specifications for quality and purity. All quality-related activities should be defined and documented.
-                        </p>
-                        </div>
-                    </div>
-                    <div class="tab">
-                        <input type="checkbox" name="accordion-1" id="cb2">
-                        <label for="cb2" class="tab__label">
-                            How do you manage construction quality
-                        </label>
-                        <div class="content">
-                           <p>
-                            The system for managing quality should encompass the organizational structure, procedures, processes, and resources, as well as activities to ensure confidence that the API will meet its intended specifications for quality and purity. All quality-related activities should be defined and documented.
-                        </p>
+                            <p data-az="Keyfiyyətin idarə edilməsi sistemi orqanizativ struktur, prosedur, proseslər və resursları, habelə keyfiyyət və təmizlik üçün məqsədilə müəyyən və sənədləşdirilmiş fəaliyyətləri əhatə etməlidir. Bütün keyfiyyətə bağlı fəaliyyətlər müəyyənləşdirilməlidir və sənədləşdirilməlidir."
+                                data-en="The system for managing quality should encompass the organizational structure, procedures, processes, and resources, as well as activities to ensure confidence that the API will meet its intended specifications for quality and purity. All quality-related activities should be defined and documented.">The system for managing quality should encompass the organizational structure, procedures, processes, and resources, as well as activities to ensure confidence that the API will meet its intended specifications for quality and purity. All quality-related activities should be defined and documented.</p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>            
             <div class="swiper mySwiper">
-                <h3>What can we do for you ?</h3>
+                <h3 data-az="Sizə nə təklif edə bilərik?" data-en="What can we do for you?">What can we do for you?</h3>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img
                             src="https://htmldemo.net/ginza/ginza/assets/images/testimonial/testimonial3.jpg" alt="">
@@ -306,14 +312,21 @@
         </section>
         <section class="discount">
             <div class="container">
-                <p>Special Ofers For Subscribers</p>
-                <h3>Ten Percent Member Discount</h3>
-                <p class="desc">Subscribe to our newsletters now and stay up to date with new
-                    collections, the latest lookbooks and exclusive offers.</p>
+                <p data-az="Xüsusi Təkliflər Abunəçilər Üçün" data-en="Special Offers For Subscribers">Special Offers
+                    For Subscribers</p>
+                <h3 data-az="On Faiz Üzv Endirimi" data-en="Ten Percent Member Discount">Ten Percent Member Discount
+                </h3>
+                <p class="desc"
+                    data-az="İndi bülletenlərimizə abunə olun və yeni kolleksiyalar, son lookbooklar və eksklüziv təkliflərdən xəbərdar olun."
+                    data-en="Subscribe to our newsletters now and stay up to date with new collections, the latest lookbooks and exclusive offers.">
+                    Subscribe to our newsletters now and stay up to date with new collections, the latest lookbooks and
+                    exclusive offers.
+                </p>
                 <form action="">
-                    <input type="email" placeholder="Enter Your Email Address Here...">
+                    <input type="email" placeholder="Enter Your Email Address Here..."
+                        data-az="E-poçt Ünvanınızı Buraya Daxil Edin..." data-en="Enter Your Email Address Here...">
                     <button>
-                        <p class="submit">SUBSCRIBE!</p>
+                        <p class="submit" data-az="ABUNƏ OL!" data-en="SUBSCRIBE!">SUBSCRIBE!</p>
                     </button>
                 </form>
             </div>
@@ -326,9 +339,13 @@
                     <div class="logo">
                         <img src="https://htmldemo.net/ginza/ginza/assets/images/logo.png" alt="">
                     </div>
-                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,<br>
-                        vel illum dolore eu feugiat nulla facilisis.</p>
-                    <h3>Follow Us On Social:</h3>
+                    <p data-az="Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis."
+                        data-en="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                        illum dolore eu feugiat nulla facilisis.
+                    </p>
+                    <h3 data-az="Sosial Şəbəkələrdə Bizi İzləyin:" data-en="Follow Us On Social:">Follow Us On Social:
+                    </h3>
                     <div class="social">
                         <i class="fa-brands fa-facebook-f"></i>
                         <i class="fa-brands fa-twitter"></i>
@@ -338,43 +355,52 @@
                     </div>
                 </div>
                 <ul class="delivery">
-                    <li class="firstlist"><a href="">Opening Time</a></li>
-                    <li><a href="">Mon – Fri: 8AM – 10PM</a></li>
-                    <li><a href="">Sat: 9AM-8PM</a></li>
-                    <li><a href="">Sun: Closed</a></li>
-                    <li class="endlist"><a href="">We Work All The Holidays</a></li>
+                    <li class="firstlist"><a href="" data-az="Açılış Vaxtı" data-en="Opening Time">Opening Time</a></li>
+                    <li><a href="" data-az="B.e. – C.a.: 8AM – 10PM" data-en="Mon – Fri: 8AM – 10PM">Mon – Fri: 8AM –
+                            10PM</a></li>
+                    <li><a href="" data-az="Şənbə: 9AM-8PM" data-en="Sat: 9AM-8PM">Sat: 9AM-8PM</a></li>
+                    <li><a href="" data-az="Bazar: Bağlıdır" data-en="Sun: Closed">Sun: Closed</a></li>
+                    <li class="endlist"><a href="" data-az="Biz Bütün Bayramlarda İşləyirik"
+                            data-en="We Work All The Holidays">We Work All The Holidays</a></li>
                 </ul>
                 <ul class="delivery">
-                    <li class="firstlist"><a href="">My Account</a></li>
-                    <li><a href="">My account</a></li>
-                    <li><a href="">Wishlist</a></li>
-                    <li><a href="">Order Tracking</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Shipping Information</a></li>
+                    <li class="firstlist"><a href="" data-az="Hesabım" data-en="My Account">My Account</a></li>
+                    <li><a href="" data-az="Hesabım" data-en="My account">My account</a></li>
+                    <li><a href="" data-az="Arzu Siyahısı" data-en="Wishlist">Wishlist</a></li>
+                    <li><a href="" data-az="Sifarişin İzlənməsi" data-en="Order Tracking">Order Tracking</a></li>
+                    <li><a href="" data-az="Məxfilik Siyasəti" data-en="Privacy Policy">Privacy Policy</a></li>
+                    <li><a href="" data-az="Göndərmə Məlumatı" data-en="Shipping Information">Shipping Information</a>
+                    </li>
                 </ul>
                 <ul class="delivery">
-                    <li class="firstlist"><a href="">About Us</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Shopping Guide</a></li>
-                    <li><a href="">Delivery Information</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Our Store</a></li>
+                    <li class="firstlist"><a href="" data-az="Haqqımızda" data-en="About Us">About Us</a></li>
+                    <li><a href="" data-az="Haqqımızda" data-en="About Us">About Us</a></li>
+                    <li><a href="" data-az="Alış-veriş Bələdçisi" data-en="Shopping Guide">Shopping Guide</a></li>
+                    <li><a href="" data-az="Çatdırılma Məlumatı" data-en="Delivery Information">Delivery Information</a>
+                    </li>
+                    <li><a href="" data-az="Məxfilik Siyasəti" data-en="Privacy Policy">Privacy Policy</a></li>
+                    <li><a href="" data-az="Mağazamız" data-en="Our Store">Our Store</a></li>
                 </ul>
+
             </div>
         </section>
         <section class="copyright">
             <div class="container">
-                <p>Copyright ©2023 <a href="#">Ginza</a>. All rights reserved.</p>
+                <p data-az="Müəllif hüquqları ©2023" data-en="Copyright ©2023">
+                    <a href="#">Ginza</a>. Bütün hüquqlar qorunur.
+                </p>
                 <ul>
-                    <li><a href="#">Policy</a></li>
-                    <li><a href="#">Questions</a></li>
-                    <li><a href="#">Affiliate</a></li>
-                    <li><a href="#">Help</a></li>
+                    <li><a href="#" data-az="Siyasət" data-en="Policy">Policy</a></li>
+                    <li><a href="#" data-az="Suallar" data-en="Questions">Questions</a></li>
+                    <li><a href="#" data-az="Tərəfdaşlıq" data-en="Affiliate">Affiliate</a></li>
+                    <li><a href="#" data-az="Kömək" data-en="Help">Help</a></li>
                 </ul>
             </div>
         </section>
     </footer>
     <script src="./src/js/main.js"></script>
+    <script src="./src/js/mode.js"></script>
+    <script src="./src/js/lang.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </body>
