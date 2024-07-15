@@ -9,8 +9,8 @@ body {
 }
 
 body.dark-mode {
-  background-color: #1a1a1a; /* koyu mod arka plan rengi */
-  color: #ffffff; /* koyu mod metin rengi */
+  background-color: #1a1a1a;
+  color: #ffffff;
 }
 
 .container {
@@ -82,6 +82,8 @@ li {
 }
 .ginza .container .shop #language-toggle {
   margin-left: 12px;
+  background-color: transparent;
+  border: none;
 }
 .ginza .text {
   display: flex;
