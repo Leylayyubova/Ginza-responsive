@@ -7,10 +7,12 @@
 body {
     font-family: "Poppins", sans-serif;
 }
+
 body.dark-mode {
-    background-color: #1a1a1a; /* koyu mod arka plan rengi */
-    color: #ffffff; /* koyu mod metin rengi */
+    background-color: #1a1a1a;
+    color: #ffffff;
 }
+
 .container {
     margin: 0 auto;
     max-width: 1152px;
